@@ -70,14 +70,14 @@ const VRLogo = ({textSize = 7}: VRLogoProps) => {
     
     return (
         <Grid columns={2} gap={0} sx={{maxWidth: gridMaxWidth, height: 'auto', justifyContent: 'center', alignItems: 'center', textAlign: 'center', transform: ['scale(0.5)', 'scale(0.75)', 'scale(1)', 'scale(1.2)']}}>
-            <Text sx={{width: gridCellDimensions, height: gridCellDimensions, fontSize: textSize, WebkitTextStroke: `${strokeWidth}px ${textSize == 0 ? 'white' : 'black'}`, color: `${textSize == 0 ? 'black' : 'white'}`}}>V</Text>
-            <Box sx={{transform: 'rotate(43deg) translate(-5%, 30%)', color: `${textSize == 0 ? 'white' : 'black'}`, fontSize: textSize }}>
+            <Text sx={{width: gridCellDimensions, height: gridCellDimensions, fontSize: textSize, WebkitTextStroke: `${strokeWidth}px ${textSize == 0 ? 'background' : 'text'}`, color: `${textSize == 0 ? 'backgrond' : 'text'}`}}>V</Text>
+            <Box sx={{transform: 'rotate(43deg) translate(-5%, 30%)', color: `${textSize == 0 ? 'text' : 'background'}`, fontSize: textSize }}>
                 <FaCrown className={`${textSize == 0 ? '' : 'svgStroke'}`}/>
             </Box>
-            <Box sx={{transform: 'rotate(-137deg) translate(5%, 30%)', color: `${textSize == 0 ? 'white' : 'black'}`, fontSize: textSize}}>
+            <Box sx={{transform: 'rotate(-137deg) translate(5%, 30%)', color: `${textSize == 0 ? 'text' : 'background'}`, fontSize: textSize}}>
                 <FaCrown className={`${textSize == 0 ? '' : 'svgStroke'}`}/>
             </Box>
-            <Text sx={{width: gridCellDimensions, height: gridCellDimensions, fontSize: textSize, WebkitTextStroke: `${strokeWidth}px ${textSize == 0 ? 'white' : 'black'}`, color: `${textSize == 0 ? 'black' : 'white'}`}}>R</Text>
+            <Text sx={{width: gridCellDimensions, height: gridCellDimensions, fontSize: textSize, WebkitTextStroke: `${strokeWidth}px ${textSize == 0 ? 'background' : 'text'}`, color: `${textSize == 0 ? 'background' : 'text'}`}}>R</Text>
         </Grid>
     )
 }
