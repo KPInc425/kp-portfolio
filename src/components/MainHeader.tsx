@@ -7,7 +7,7 @@ import VRLogo from "./VRLogo";
 const MainHeader = () => {
     return (
         <header>
-            <Flex sx={{alignItems: 'center'}}>
+            <Flex p={2} sx={{alignItems: 'center'}}>
                 <Box sx={{minWidth: 'fit-content', width: ['40px']}}>
                     <VRLogo textSize={6} />
                 </Box>

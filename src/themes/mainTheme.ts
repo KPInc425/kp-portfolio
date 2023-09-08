@@ -9,17 +9,21 @@ export const mainTheme: Theme = {
     },
     colors: {
         text: '#fff',
+        secondaryText: 'rgba(255,255,255,0.5)',
         background: 'rgba(0,0,0,0.8)',
-        primary: '#33e',
+        primary: '#20421A',
         surface: 'rgba(0,0,0,0.65)',
+        
     },
     fontSizes: [
-        8, 12, 14, 16, 20, 24, 32, 48, 64
+        8, 12, 14, 16, 20, 24, 32, 48, 64, 72
     ],
     space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
     lineHeights: {
         body: 1.5,
         heading: 1.125,
+        close: 1.25,
+        far: 2,
     },
     fontWeights: {
         body: 400,
@@ -28,7 +32,7 @@ export const mainTheme: Theme = {
         semiBold: 300,
         thin: 100,
     },
-    breakpoints: [40, 52, 125].map((n) => n + 'em'),
+    breakpoints: [640, 768, 1024, 1280, 2560].map((n) => n + 'px'),
     links: {
         nav: {
             fontFamily: 'link',
@@ -69,9 +73,17 @@ export const mainTheme: Theme = {
             lineHeight: 'heading',
         },
         logoHeading: {
-            fontSize: [2, 4, 6, 7],
+            fontSize: [2, 4, 6, 7, 7, 9],
             fontFamily: 'logoHeading',
             fontWeight: 'heading',
+            lineHeight: 'heading',
+            WebkitTextStroke: '0.35px black',
+            display: 'block',
+        },
+        logoCard: {
+            fontSize: [2, 4, 6, 7, 8, 9],
+            fontFamily: 'logoHeading',
+            fontWeight: 'semiBold',
             lineHeight: 'heading',
             WebkitTextStroke: '0.35px black',
             display: 'block',
@@ -81,6 +93,26 @@ export const mainTheme: Theme = {
             fontFamily: 'body',
             fontWeight: 'thin',
             lineHeight: 'body',
+        },
+        infoCardHeading: {
+            fontSize: 6,
+            fontFamily: 'heading',
+            fontWeight: 'heading',
+            lineHeight: 'heading',
+        },
+        infoCardDescription: {
+            fontSize: 3,
+            fontFamily: 'body',
+            fontWeight: 'body',
+            lineHeight: 'close',
+            color: 'secondaryText',
+        },
+        infoCardGraphic: {
+            fontSize: 7,
+            fontFamily: 'body',
+            fontWeight: 'body',
+            lineHeight: 'body',
+            color: 'secondaryText',
         },
     },
     images: {

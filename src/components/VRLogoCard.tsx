@@ -4,12 +4,12 @@ import VRLogo from "./VRLogo";
 
 const VRLogoCard = () => {
   return (
-    <Card sx={{borderRadius: '15px', backgroundColor: 'surface', maxWidth: '250px'}}>
+    <Card py='3' px='4' sx={{borderRadius: '15px', backgroundColor: 'surface', minWidth: '400px'}}>
         <Flex sx={{alignItems: 'center', justifyContent: 'center'}}>
-            <VRLogo textSize={7} />
+            <VRLogo textSize={9} />
             <Box sx={{minWidth: 'fit-content'}}>
-                <Text sx={{ variant: "text.logoHeading" }}>Victor</Text>
-                <Text ml={4} sx={{ variant: "text.logoHeading" }}>Reyes</Text>
+                <Text sx={{ variant: "text.logoCard" }}>Victor</Text>
+                <Text ml={4} sx={{ variant: "text.logoCard" }}>Reyes</Text>
             </Box>
         </Flex>
     </Card>

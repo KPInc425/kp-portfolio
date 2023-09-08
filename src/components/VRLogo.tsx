@@ -19,6 +19,16 @@ const VRLogo = ({textSize = 7}: VRLogoProps) => {
 
     const adjustSize = () => {
         switch (textSize) {
+            case 9:
+                setStrokeWidth(2)
+                setGridMaxWidth(['150px'])
+                setGridCellDimensions('80px')
+                break;
+            case 8:
+                setStrokeWidth(1.7)
+                setGridMaxWidth(['110px'])
+                setGridCellDimensions('55px')
+                break;
             case 7:
                 setStrokeWidth(1.5)
                 setGridMaxWidth(['110px'])
