@@ -1,64 +1,94 @@
 /** @jsxImportSource theme-ui */
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Box, Flex, Text } from "theme-ui"
+import PortfolioInfoDetails from "./PortfolioInfoDetails"
+import PortfolioInfoMenu from "./PortfolioInfoMenu"
+
+const details = {
+    home: {
+        heading: 'Something about myself and why I want to be a web dev, like a clever tagline',
+        description: 'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus.',
+        graphicText: 'Powered by Passion and Enthusiasm',
+    },
+    details: {
+        heading: 'Here is something a bit more in depth about myself',
+        description: 'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus. Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus.Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus. Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt.',
+        graphicText: 'Powered by Passion and Enthusiasm',
+    },
+    portfolio: {
+        heading: 'Portfolio',
+        description: 'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus.',
+        graphicText: 'Powered by Passion and Enthusiasm',
+    },
+    resume: {
+        heading: 'Resume',
+        description: 'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus.',
+        graphicText: 'Powered by Passion and Enthusiasm',
+    },
+    contact: {
+        heading: 'Contact',
+        description: 'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus.',
+        graphicText: 'Powered by Passion and Enthusiasm',
+    },
+}
 
 const PortfolioInfo = () => {
-    const menuItems = ['Home', 'Details', 'Portfolio', 'Resume', 'Contact']
     const [activeTab, setActiveTab] = useState('Home')
+    const [activeDetails, setActiveDetails] = useState({heading: '', description: '', graphicText: ''})
+    useEffect(() => {
+        console.log(activeTab)
+        switch(activeTab) {
+            case 'Home':
+                setActiveDetails({
+                    heading: details.home.heading,
+                    description: details.home.description,
+                    graphicText: details.home.graphicText,
+                })
+                break
+            case 'Details':
+                setActiveDetails({
+                    heading: details.details.heading,
+                    description: details.details.description,
+                    graphicText: details.details.graphicText,
+                })
+                break
+            case 'Portfolio':
+                setActiveDetails({
+                    heading: details.portfolio.heading,
+                    description: details.portfolio.description,
+                    graphicText: details.portfolio.graphicText,
+                })
+                break
+            case 'Resume':
+                setActiveDetails({
+                    heading: details.resume.heading,
+                    description: details.resume.description,
+                    graphicText: details.resume.graphicText,
+                })
+                break
+            case 'Contact':
+                setActiveDetails({
+                    heading: details.contact.heading,
+                    description: details.contact.description,
+                    graphicText: details.contact.graphicText,
+                })
+                break
+            default:
+                setActiveDetails({
+                    heading: details.home.heading,
+                    description: details.home.description,
+                    graphicText: details.home.graphicText,
+                })
+                break
+        }
+    }, [activeTab])
+
+
     return (
         <Box>
-            <Flex ml='4' px='2' sx={{
-                backgroundColor: 'primary', 
-                borderRadius: '12px 12px 0 0', 
-                height: '50px', 
-                width: '800px', 
-                gap: '4', 
-                alignItems: 'center', 
-                justifyContent: 'space-around'
-            }}>
-                { menuItems.map((item) => {
-                    return ( 
-                        <Flex
-                            onClick={() => setActiveTab(item)}   
-                            sx={{
-                            backgroundColor: `${activeTab == item ? 'black' : 'transparent'}`,
-                            borderRadius: '8px 8px 0 0', 
-                            height: '58px', 
-                            flexDirection: 'column', 
-                            justifyContent: 'center', 
-                            marginTop: '-8px', 
-                            minWidth: '120px'
-                        }}>
-                            <Text sx={{textAlign: 'center', paddingTop: '15px'}}>{item}</Text> 
-                        </Flex>
-                    )})
-                }
-            </Flex>
-            <Flex sx={{borderRadius: '12px', backgroundColor: 'surface', height: '500px', width: '1000px'}}>
-                <Flex sx={{flexDirection: 'column', width: '60%'}}>
-                    <Box pt='100px' pl='5'>
-                        <Text sx={{variant: 'text.infoCardHeading'}}>Something about myself and why I want to be a web dev, like a clever tagline</Text>
-                    </Box>
-                    <Box mt='5' pl='84px'>
-                        <Text sx={{variant: 'text.infoCardDescription'}}>
-                            Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo
-                            dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem.
-                            Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta
-                            voluptatibus.
-                        </Text>
-                    </Box>
-                </Flex>
-                <Flex sx={{flexDirection: 'column', width: '40%', alignItems: 'flex-end'}}>
-                    <Box mr='4' mt='4' sx={{border: '8px solid #20421A', borderRadius: '12px', width: '300px', height: '175px'}}>
-                        <Box ml='-5' mt='4' sx={{backgroundColor: 'black', borderRadius: '12px', height: '175px', width: '300px'}}>
-                            <Box ml='25px' sx={{display: 'relative'}}>
-                                <Text mt='-4' sx={{variant: 'text.infoCardGraphic', display: 'inline-block'}}>Powered by Passion and Enthusiasm</Text>
-                            </Box>
-                        </Box>
-                    </Box>
-                </Flex>
-            </Flex>
+            <PortfolioInfoMenu activeTab={activeTab} setActiveTab={setActiveTab}/>
+            <PortfolioInfoDetails heading={activeDetails.heading} description={activeDetails.description} graphicText={activeDetails.graphicText}/>
         </Box>
     )
 }
