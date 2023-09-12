@@ -1,13 +1,12 @@
 /** @jsxImportSource theme-ui */
 import { Image, Flex, Text, Box } from "theme-ui";
-import vrLogo from "../assets/VRLogo.svg";
 import topBardGraphic from "../assets/topBarGraphic.svg";
 import VRLogo from "./VRLogo";
 
 const MainHeader = () => {
     return (
         <header>
-            <Flex p={2} sx={{alignItems: 'center'}}>
+            <Flex p={2} sx={{alignItems: 'center', scrollSnapAlign: 'start'}}>
                 <Box sx={{minWidth: 'fit-content', width: ['40px']}}>
                     <VRLogo textSize={6} />
                 </Box>

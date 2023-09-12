@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, useContext } from "react"
 import { Box, Flex, Text } from "theme-ui"
 import PortfolioInfoDetails from "./PortfolioInfoDetails"
 import PortfolioInfoMenu from "./PortfolioInfoMenu"
@@ -14,27 +14,31 @@ const details = {
     details: {
         heading: 'Here is something a bit more in depth about myself',
         description: 'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus. Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus.Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus. Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt.',
-        graphicText: 'Powered by Passion and Enthusiasm',
+        graphicText: 'Inspired by Passion and Enthusiasm',
     },
     portfolio: {
         heading: 'Portfolio',
         description: 'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus.',
-        graphicText: 'Powered by Passion and Enthusiasm',
+        graphicText: 'Preceded by Vision and Determination',
     },
     resume: {
         heading: 'Resume',
         description: 'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus.',
-        graphicText: 'Powered by Passion and Enthusiasm',
+        graphicText: 'Built by Challenge, Conviction',
     },
     contact: {
         heading: 'Contact',
         description: 'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus.',
-        graphicText: 'Powered by Passion and Enthusiasm',
+        graphicText: 'Contact by Email or Social',
     },
 }
 
-const PortfolioInfo = () => {
-    const [activeTab, setActiveTab] = useState('Home')
+type PortfolioInfoProps = {
+    activeTab: string
+    setActiveTab: (activeTab: string) => void
+}
+
+const PortfolioInfo = ({activeTab, setActiveTab}: PortfolioInfoProps) => {
     const [activeDetails, setActiveDetails] = useState({heading: '', description: '', graphicText: ''})
     useEffect(() => {
         console.log(activeTab)

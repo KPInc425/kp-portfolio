@@ -12,7 +12,8 @@ export const mainTheme: Theme = {
         secondaryText: 'rgba(255,255,255,0.5)',
         background: 'rgba(0,0,0,0.8)',
         primary: '#20421A',
-        surface: 'rgba(0,0,0,0.65)',
+        surfaceGlass: 'rgba(0,0,0,0.65)',
+        surfaceOpaque: 'rgba(31,31,31,1)',
         
     },
     fontSizes: [
