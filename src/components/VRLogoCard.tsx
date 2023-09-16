@@ -4,7 +4,7 @@ import VRLogo from "./VRLogo";
 
 const VRLogoCard = () => {
   return (
-    <Card py='3' px='4' sx={{borderRadius: '15px', backgroundColor: 'surface', minWidth: 'fit-content'}}>
+    <Card py='3' px='4' sx={{borderRadius: '15px', backgroundColor: 'surface', minWidth: 'fit-content', display: ['none', 'block']}}>
         <Flex sx={{alignItems: 'center', justifyContent: 'center'}}>
             <VRLogo textSize={9} />
             <Box sx={{minWidth: 'fit-content'}}>

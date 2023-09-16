@@ -110,7 +110,7 @@ export const mainTheme: Theme = {
             color: 'secondaryText',
         },
         infoCardGraphic: {
-            fontSize: 7,
+            fontSize: [6,7],
             fontFamily: 'body',
             fontWeight: 'body',
             lineHeight: 'body',

@@ -7,7 +7,7 @@ import VRLogo from "./VRLogo";
 const Footer = () => {
     return (
         <footer>
-            <Box sx={{background: 'black', position: 'fixed', width: '100%', bottom: '0', display: 'flex', justifyContent: 'center', alignItems: 'center', borderTop: '3px solid white'}}>
+            <Box sx={{background: 'black', position: ['static','fixed'], width: '100%', bottom: '0', display: 'flex', justifyContent: 'center', alignItems: 'center', borderTop: '3px solid white'}}>
                 <VRLogo textSize={0} />
                 <Box pt={'3px'} sx={{fontSize: 1}}>
                     <FaRegCopyright />

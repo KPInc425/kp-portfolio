@@ -6,6 +6,7 @@ import VRLogoCard from './components/VRLogoCard'
 import { Flex, Text } from 'theme-ui'
 import PortfolioInfo from './components/PortfolioInfo'
 import PortfolioProjects from './components/PortfolioProjects'
+import PortfolioResume from './components/PortfolioResume'
 
 
 function App() {
@@ -13,12 +14,15 @@ function App() {
   return (
     <>
       <MainLayout>
-        <Flex m='5' sx={{justifyContent: 'center', alignItems: 'center', gap: '5', }}>
+        <Flex m={['0','5']} sx={{justifyContent: 'center', alignItems: 'center', gap: '5', flexDirection: ['column', 'row']}}>
           <VRLogoCard />
           <PortfolioInfo activeTab={activeTab} setActiveTab={setActiveTab} />
         </Flex>
         { activeTab === 'Portfolio' && (
           <PortfolioProjects />
+        )}
+        { activeTab === 'Resume' && (
+          <PortfolioResume />
         )}
 
       </MainLayout>

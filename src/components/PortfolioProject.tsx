@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 import { Box, Flex, Image, Text } from "theme-ui"
 
 const PortfolioProject = () => {

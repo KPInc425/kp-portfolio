@@ -1,3 +1,5 @@
+/** @jsxImportSource theme-ui */
+import { Box } from "theme-ui";
 import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
 
@@ -9,7 +11,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <>
       <MainHeader />
-      <div>{children}</div>
+      <Box my={['0','4']}>{children}</Box>
       <Footer />
     </>
   );

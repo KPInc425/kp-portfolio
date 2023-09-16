@@ -20,13 +20,15 @@ const PortfolioInfoMenu = ({activeTab, setActiveTab} : PortfolioInfoMenuProps) =
             width: '800px', 
             gap: '4', 
             alignItems: 'center', 
-            justifyContent: 'space-around'
+            justifyContent: 'space-around',
+            display: ['none', 'flex']
         }}>
             { menuItems.map((item) => {
                 return ( 
                     <Flex
                         key={item}
                         onClick={() => handleTabClick(item)}   
+                        className="caveat-font"
                         sx={{
                         backgroundColor: `${activeTab == item ? 'black' : 'transparent'}`,
                         borderRadius: '8px 8px 0 0', 
@@ -36,8 +38,11 @@ const PortfolioInfoMenu = ({activeTab, setActiveTab} : PortfolioInfoMenuProps) =
                         marginTop: '-8px', 
                         minWidth: '120px',
                         cursor: 'pointer',
+                        WebkitTextStroke: '1px #000',
+                        textShadow: `${activeTab == item ? '0 0 15px #1EFF00' : 'none'}`,
+                        fontWeight: '900'
                     }}>
-                        <Text sx={{textAlign: 'center', paddingTop: '15px', cursor: 'pointer',}}>{item}</Text> 
+                        <Text sx={{textAlign: 'center', paddingTop: '15px', cursor: 'pointer', fontSize: '6'}}>{item}</Text> 
                     </Flex>
                 )})
             }
