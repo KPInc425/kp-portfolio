@@ -20,7 +20,7 @@ const details = {
     graphicText: "Inspired by Passion and Enthusiasm",
   },
   portfolio: {
-    heading: "See what I have been up to!",
+    heading: "See what I have been up to! Check out my projects!",
     description:
       "Below of some of the projects I have been involved with. My contributions vary from project to project, but I am always looking to learn and grow. From front end to back end, I am often caught in the middle contributing to both, with an emphasis on the front end. Check out my works below, and feel free to reach out to me if you have any questions. Maybe try one of games I was involved in creating! Thanks for stopping by and checking things out!",
     graphicText: "Preceded by Vision and Determination",

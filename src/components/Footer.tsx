@@ -4,10 +4,14 @@ import { FaRegCopyright } from 'react-icons/fa'
 import vrLogoFooter from "../assets/VRLogo(footer).svg";
 import VRLogo from "./VRLogo";
 
-const Footer = () => {
+type FooterProps = {
+    activeTab: string;
+};
+
+const Footer = ({activeTab}: FooterProps) => {
     return (
         <footer>
-            <Box sx={{background: 'black', position: ['static','fixed'], width: '100%', bottom: '0', display: 'flex', justifyContent: 'center', alignItems: 'center', borderTop: '3px solid white'}}>
+            <Box sx={{background: 'black', position: [`${activeTab == 'Contact' ? 'fixed': 'static'}`,'fixed'], width: '100%', bottom: '0', display: 'flex', justifyContent: 'center', alignItems: 'center', borderTop: '3px solid white'}}>
                 <VRLogo textSize={0} />
                 <Box pt={'3px'} sx={{fontSize: 1}}>
                     <FaRegCopyright />

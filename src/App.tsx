@@ -13,8 +13,8 @@ function App() {
   const [activeTab, setActiveTab] = useState('Home')
   return (
     <>
-      <MainLayout>
-        <Flex m={['0','5']} sx={{justifyContent: 'center', alignItems: 'center', gap: '5', flexDirection: ['column', 'row']}}>
+      <MainLayout activeTab={activeTab}>
+        <Flex m={['0','5']} sx={{justifyContent: 'center', alignItems: 'center', gap: '5', flexDirection: ['column', 'column', 'column', 'column', 'row']}}>
           <VRLogoCard />
           <PortfolioInfo activeTab={activeTab} setActiveTab={setActiveTab} />
         </Flex>
@@ -24,7 +24,6 @@ function App() {
         { activeTab === 'Resume' && (
           <PortfolioResume />
         )}
-
       </MainLayout>
     </>
   )

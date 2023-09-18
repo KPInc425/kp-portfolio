@@ -5,14 +5,15 @@ import MainHeader from "../components/MainHeader";
 
 type MainLayoutProps = {
     children: React.ReactNode;
+    activeTab: string;
 };
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+const MainLayout: React.FC<MainLayoutProps> = ({ children, activeTab }) => {
   return (
     <>
       <MainHeader />
       <Box my={['0','4']}>{children}</Box>
-      <Footer />
+      <Footer activeTab={activeTab} />
     </>
   );
 };
