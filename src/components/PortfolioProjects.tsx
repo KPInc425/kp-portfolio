@@ -14,30 +14,32 @@ const projects = [
       'Integration of gallery to webshop to print your favorite generated images on physical media',
       'Interactive story telling with user driven choices to direct the narrative',
     ],
-    imageUrl: 'https://via.placeholder.com/300',
+    imageUrl: 'https://res.cloudinary.com/dxrjeyjpn/image/private/s--zwekjVui--/v1695340529/PortfolioSite/TMRAExample_y1y6ow.jpg',
     projectUrl: 'https://tmra.ai'
   },
   {
-    title: 'Project 2 Title',
-    tagline: 'PROJECT TAGLINE SOME MORE CLEVER WORDS, THIS IS A DIFFERENT PROJECT!',
-    description: 'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus. Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus.',
+    title: 'Word Search Kingdom',
+    tagline: 'Nostalic Word Search Game with a modern twist',
+    description: 'Word Search Kingdom is a word search game with a twist. It is a nostalgic game that has been around for a long time, but it has been modernized with a new look and new features. It was built within the Dotnet ecosystem utilizing blazorWasm, Razor templates and Mudblazor for the frontend, C# to connect all the parts, and a SQL database. There is a suite of integrated automated testing from top to bottom of the stack. We have been very happy with the results so far, and We have big plans to make it more interactive and multiplayer with the potential of a story mode to really bring it to life.',
     bullets: [
-      'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem.',
-      'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum.',
-      'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum.'
+      'Generate your own word search puzzles with custom words and sizes',
+      'Keep track of your progress with a user account and leaderboards are coming soon to compete with friends and family',
+      'Multiplayer feature is in the planning stage, but with time attack and collaborative modes planned, it will be a great way to play with friends and family'
     ],
-    imageUrl: 'https://via.placeholder.com/300'
+    imageUrl: 'https://res.cloudinary.com/dxrjeyjpn/image/private/s--R1NUUd1X--/v1695341498/PortfolioSite/WSKExample_tmoj0r.jpg', 
+    projectUrl: 'https://wordsearchkingdom.com'
   },
   {
-    title: 'Project 3 Title',
-    tagline: 'PROJECT TAGLINE SOME MORE CLEVER WORDS, THIS IS A DIFFERENT PROJECT!',
-    description: 'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus. Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem qui galisum incidunt aut exercitationem voluptatem. Non galisum possimus quo dignissimos omnis At natus minima non omnis quidem qui soluta voluptatibus.',
+    title: 'KPWarz',
+    tagline: 'Old idea made new, get your hustle up!',
+    description: 'A classic made modern, redone once again with some new twists. I have wanted to remake this type of game for a very long time, ever since I played it on a calculator in highschool, 20 years later, I am finally close to realizing it. It was built with RedwoodJS which incorporates React, Typescript, Storybook for frontend and, GraphQL, Prisma, for the backend, Postgres for the database, and Jest for testing. Redwood is a greate framework to handle the full stack. KPWarz is a work in progress, but I am very excited to see it come to life. I chose to work with Mantine for the styling framework so there was some coherence in the design. I am very happy with the results so far, and I am excited to continue working on it and adding new features to modernaize it.',
     bullets: [
-      'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum ut facilis voluptatem.',
-      'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum.',
-      'Lorem ipsum dolor sit amet. Est tempora eligendi et dolores exercitationem aut nemo dolorum.'
+      'New twist on an old classic, with a modern design and new features',
+      'Classic from rags to riches story, with extra choices to change your starting point and difficulty',
+      'Built in dev blog, to keep players up to date on changes and future endeavors.'
     ],
-    imageUrl: 'https://via.placeholder.com/300'
+    imageUrl: 'https://source.unsplash.com/sOKJDYHGCjc',
+    projectUrl: 'https://kpwarz.netlify.app/'
   }
 ]
 
