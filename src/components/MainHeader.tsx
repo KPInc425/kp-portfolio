@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { Image, Flex, Text, Box } from "theme-ui";
-import topBardGraphic from "../assets/topBarGraphic.svg";
+import topBardGraphic from "../assets/TopBarGraphic.svg";
 import VRLogo from "./VRLogo";
 
 const MainHeader = () => {

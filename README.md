@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Welcome to my portfolio repository! This is where I showcase my work, skills, and experiences. You can visit the live website at [KPInc425](https://www.your-portfolio-website.com).
+Welcome to my portfolio repository! This is where I showcase my work, skills, and experiences. You can visit the live website at [KPInc425](https://www.vreyes-portfolio.netlify.app).
 
 ## Table of Contents
 
