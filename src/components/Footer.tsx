@@ -3,11 +3,8 @@ import { Text, Box } from "theme-ui";
 import { FaRegCopyright } from 'react-icons/fa'
 import VRLogo from "./VRLogo";
 
-type FooterProps = {
-    activeTab: string;
-};
 
-const Footer = ({activeTab}: FooterProps) => {
+const Footer = () => {
     return (
         <footer>
             <Box sx={{background: 'black', position: ['static','static','static','static','fixed'], width: '100%', bottom: '0', display: 'flex', justifyContent: 'center', alignItems: 'center', borderTop: '3px solid white'}}>
