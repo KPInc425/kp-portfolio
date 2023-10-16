@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Welcome to my portfolio repository! This is where I showcase my work, skills, and experiences. You can visit the live website at [KPInc425](https://www.vreyes-portfolio.netlify.app).
+Welcome to my portfolio repository! This is where I showcase my work, skills, and experiences. You can visit the live website at [VReyes Portfolio](https://vreyes-portfolio.netlify.app).
 
 ## Table of Contents
 
@@ -18,10 +18,10 @@ This repository contains the source code for my personal portfolio website. It s
 
 ## Features
 
-- **Projects:** Showcase your latest projects and describe them in detail.
-- **Resume:** Include your resume or CV for potential employers or collaborators to download.
-- **About Me:** Share your background, interests, and a bit about yourself.
-- **Contact:** Provide a way for visitors to get in touch with you.
+- **Projects:** A Showcase of my latest projects with deatiled description.
+- **Resume:** A lite version of my resume.
+- **About Me:** A little more detail about me.
+- **Contact:** Contact details included.
 
 ## Technologies
 
