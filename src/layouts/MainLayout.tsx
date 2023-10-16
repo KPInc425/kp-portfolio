@@ -13,7 +13,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children, activeTab }) => {
     <>
       <MainHeader />
       <Box my={['0','4']}>{children}</Box>
-      <Footer activeTab={activeTab} />
+      <Footer />
     </>
   );
 };
