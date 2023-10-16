@@ -11,7 +11,7 @@ import PortfolioResume from './components/PortfolioResume'
 
 function App() {
   const [activeTab, setActiveTab] = useState(
-    localStorage.getItem('activeView') || 'home'
+    localStorage.getItem('activeView') || 'Home'
   )
   return (
     <>
