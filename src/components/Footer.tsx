@@ -1,7 +1,6 @@
 /** @jsxImportSource theme-ui */
-import { Image, Flex, Text, Box } from "theme-ui";
+import { Text, Box } from "theme-ui";
 import { FaRegCopyright } from 'react-icons/fa'
-import vrLogoFooter from "../assets/VRLogo(footer).svg";
 import VRLogo from "./VRLogo";
 
 type FooterProps = {

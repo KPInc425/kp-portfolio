@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Box, Flex, Text } from "theme-ui"
+import { Flex } from "theme-ui"
 import PortfolioProject from "./PortfolioProject"
 import SlantedBackground from "./SlandtedBackground"
 

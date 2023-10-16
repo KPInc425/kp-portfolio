@@ -1,7 +1,7 @@
 /** @jsxImportSource theme-ui */
 
-import { useEffect, useState, useContext } from "react";
-import { Box, Flex, Text } from "theme-ui";
+import { useEffect, useState } from "react";
+import { Box } from "theme-ui";
 import PortfolioInfoDetails from "./PortfolioInfoDetails";
 import PortfolioInfoMenu from "./PortfolioInfoMenu";
 

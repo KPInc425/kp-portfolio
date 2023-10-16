@@ -1,27 +1,81 @@
-# React + TypeScript + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio repository! This is where I showcase my work, skills, and experiences. You can visit the live website at [KPInc425](https://www.your-portfolio-website.com).
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Introduction
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This repository contains the source code for my personal portfolio website. It serves as a central hub for displaying my projects, skills, and professional background. Feel free to explore the code and provide feedback or suggestions.
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+- **Projects:** Showcase your latest projects and describe them in detail.
+- **Resume:** Include your resume or CV for potential employers or collaborators to download.
+- **About Me:** Share your background, interests, and a bit about yourself.
+- **Contact:** Provide a way for visitors to get in touch with you.
+
+## Technologies
+
+This portfolio website is built using the following technologies:
+
+- HTML
+- CSS
+- TypeScript
+- React
+- React Icons
+- Theme UI
+- Vite
+
+## Getting Started
+
+To get a copy of this project up and running on your local machine, follow these steps:
+
+1. Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/your-portfolio-website.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Usage
+
+Feel free to use this project as a template for your own portfolio website. Customize it by replacing the content with your information, projects, and style. Make sure to replace the placeholder content with your own.
+
+## Contributing
+
+If you'd like to contribute to this project, please follow these guidelines:
+
+1. Create a fork of this repository.
+2. Create a new branch for your feature or bug fix:
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+1. Make your changes and commit them:
+
+```bash
+git commit -m "Add your commit message here"
+```
+
+1. Push your changes to your fork:
+
+```bash
+git push origin feature/your-feature-name
+```
+
+1. Open a pull request and describe your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://mit-license.org/) page for details.
+
+Thank you for visiting my portfolio website repository. If you have any questions or feedback, please don't hesitate to reach out. Enjoy exploring my work!

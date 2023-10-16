@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 
-import { Box, Flex, Image, Link, Text } from "theme-ui"
+import { Box, Flex, Link, Text } from "theme-ui"
 
 const PortfolioResume = () => {
   return (
