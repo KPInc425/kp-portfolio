@@ -19,7 +19,7 @@ const PortfolioProject = ({project}: PortfolioProjectProps) => {
         <Box sx={{borderRadius: '12px', backgroundColor: 'surfaceSecondary', height: '300px', width: '300px', position: 'absolute', left: '-20%', top: '12%'}}>
           <Flex sx={{justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: '100%'}}>
             <Text sx={{ variant: 'text.heading', color: 'background'}}>{project.title}</Text>
-            <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', textAlign: 'center', padding: '12px 20px'}}>{project.tagline}</Text>
+            <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', textAlign: 'center', padding: '12px 20px', textWrap: 'balance'}}>{project.tagline}</Text>
             <Link href={project.projectUrl} target="_blank" sx={{variant: 'links.primary', color: 'background', textDecoration: 'none', padding: '12px 20px'}}>Check it out!</Link>
           </Flex>
         </Box>

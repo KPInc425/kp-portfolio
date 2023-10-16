@@ -10,8 +10,9 @@ type PortfolioInfoMenuProps = {
 const PortfolioInfoMenu = ({activeTab, setActiveTab} : PortfolioInfoMenuProps) => {
     const menuItems = ['Home', 'Details', 'Portfolio', 'Resume', 'Contact']
     const [showMenu, setShowMenu] = useState(false)
-    const handleTabClick = (item: string) => {
-        setActiveTab(item)
+    const handleTabClick = (viewTab: string) => {
+        localStorage.setItem('activeView', viewTab)
+        setActiveTab(viewTab)
         if (showMenu) setShowMenu(false)
     }
     return (
@@ -26,14 +27,14 @@ const PortfolioInfoMenu = ({activeTab, setActiveTab} : PortfolioInfoMenuProps) =
                 justifyContent: 'space-around',
                 display: ['none', 'flex']
             }}>
-                { menuItems.map((item) => {
+                { menuItems.map((viewTab) => {
                     return ( 
                         <Flex
-                            key={item}
-                            onClick={() => handleTabClick(item)}   
+                            key={viewTab}
+                            onClick={() => handleTabClick(viewTab)}   
                             className="caveat-font"
                             sx={{
-                            backgroundColor: `${activeTab == item ? 'black' : 'transparent'}`,
+                            backgroundColor: `${activeTab == viewTab ? 'black' : 'transparent'}`,
                             borderRadius: '8px 8px 0 0', 
                             height: '58px', 
                             flexDirection: 'column', 
@@ -42,10 +43,10 @@ const PortfolioInfoMenu = ({activeTab, setActiveTab} : PortfolioInfoMenuProps) =
                             minWidth: '120px',
                             cursor: 'pointer',
                             WebkitTextStroke: '1px #000',
-                            textShadow: `${activeTab == item ? '0 0 15px #1EFF00' : 'none'}`,
+                            textShadow: `${activeTab == viewTab ? '0 0 15px #1EFF00' : 'none'}`,
                             fontWeight: '900'
                         }}>
-                            <Text sx={{textAlign: 'center', paddingTop: '15px', cursor: 'pointer', fontSize: '6'}}>{item}</Text> 
+                            <Text sx={{textAlign: 'center', paddingTop: '15px', cursor: 'pointer', fontSize: '6'}}>{viewTab}</Text> 
                         </Flex>
                     )})
                 }
@@ -82,14 +83,14 @@ const PortfolioInfoMenu = ({activeTab, setActiveTab} : PortfolioInfoMenuProps) =
             </Flex>
             {showMenu && (
                 <Flex sx={{flexDirection: 'column', position: 'absolute', backgroundColor: 'surfaceOpaque', top: '50px', right: '10px', borderRadius: '0 0 12px 12px'}}>
-                    { menuItems.map((item) => {
+                    { menuItems.map((viewTab) => {
                         return ( 
                             <Flex
-                                key={item}
-                                onClick={() => handleTabClick(item)}   
+                                key={viewTab}
+                                onClick={() => handleTabClick(viewTab)}   
                                 className="caveat-font"
                                 sx={{
-                                backgroundColor: `${activeTab == item ? 'black' : 'transparent'}`,
+                                backgroundColor: `${activeTab == viewTab ? 'black' : 'transparent'}`,
                                 borderRadius: '8px 8px 0 0', 
                                 height: '58px', 
                                 flexDirection: 'column', 
@@ -97,10 +98,10 @@ const PortfolioInfoMenu = ({activeTab, setActiveTab} : PortfolioInfoMenuProps) =
                                 minWidth: '120px',
                                 cursor: 'pointer',
                                 WebkitTextStroke: '1px #000',
-                                textShadow: `${activeTab == item ? '0 0 15px #1EFF00' : 'none'}`,
+                                textShadow: `${activeTab == viewTab ? '0 0 15px #1EFF00' : 'none'}`,
                                 fontWeight: '900'
                             }}>
-                                <Text sx={{textAlign: 'center', cursor: 'pointer', fontSize: '6'}}>{item}</Text> 
+                                <Text sx={{textAlign: 'center', cursor: 'pointer', fontSize: '6'}}>{viewTab}</Text> 
                             </Flex>
                         )})
                     }
