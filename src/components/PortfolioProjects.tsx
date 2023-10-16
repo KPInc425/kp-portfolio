@@ -45,9 +45,9 @@ const projects = [
 
 const PortfolioProjects = () => {
     return (
-      <Flex m={[3,5]} sx={{justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: [3,6], position: 'relative'}}>
+      <Flex m={[3,5]} sx={{justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: [3,3,4,4,6], position: 'relative'}}>
         {projects.map((project, index) => (
-          <Flex key={index} sx={{position: 'relative', width: '99vw', height: ['100%','100vh'], overflow: 'hidden', flexDirection: 'column', justifyContent: 'center', scrollSnapAlign: 'start'}}>
+          <Flex pb={[0,0,4]} key={index} sx={{position: 'relative', width: '99vw', height: ['100%','100%','100%','100%','100vh'], overflow: 'hidden', flexDirection: 'column', justifyContent: 'center', scrollSnapAlign: 'start'}}>
             <SlantedBackground/>
             <PortfolioProject project={project}/>
           </Flex>

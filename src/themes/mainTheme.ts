@@ -34,7 +34,7 @@ export const mainTheme: Theme = {
         semiBold: 300,
         thin: 100,
     },
-    breakpoints: [640, 768, 1024, 1280, 2560].map((n) => n + 'px'),
+    breakpoints: [640, 768, 1024, 1441, 2560].map((n) => n + 'px'),
     links: {
         nav: {
             fontFamily: 'link',

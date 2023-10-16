@@ -10,7 +10,7 @@ type FooterProps = {
 const Footer = ({activeTab}: FooterProps) => {
     return (
         <footer>
-            <Box sx={{background: 'black', position: [`${(activeTab == 'Contact' || activeTab == 'Home' || activeTab == 'Details') ? 'static': 'static'}`,'fixed'], width: '100%', bottom: '0', display: 'flex', justifyContent: 'center', alignItems: 'center', borderTop: '3px solid white'}}>
+            <Box sx={{background: 'black', position: [`${(activeTab == 'Contact' || activeTab == 'Home' || activeTab == 'Details') ? 'static': 'static'}`,'static'], width: '100%', bottom: '0', display: 'flex', justifyContent: 'center', alignItems: 'center', borderTop: '3px solid white'}}>
                 <VRLogo textSize={0} />
                 <Box pt={'3px'} sx={{fontSize: 1}}>
                     <FaRegCopyright />

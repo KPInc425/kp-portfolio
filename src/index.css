@@ -29,14 +29,14 @@
 html { 
   scroll-snap-type: y proximity;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     scroll-snap-type: none;
   }
 }
 
 body { 
   scroll-snap-type: y mandatory;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     scroll-snap-type: none;
   }
 }

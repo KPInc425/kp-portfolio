@@ -6,38 +6,38 @@ const PortfolioResume = () => {
   return (
     <>        
       <Flex pt='3' pb='5' sx={{position: 'relative', width: '99vw', flexDirection: 'column', justifyContent: 'center', scrollSnapAlign: 'start'}}>
-        <Box mx='auto' py='4' sx={{borderRadius: '12px', backgroundColor: 'surfaceOpaque', height: 'fit-content', width: ['100%','1100px'], position: 'relative'}}>
+        <Box mx='auto' py='4' sx={{borderRadius: '12px', backgroundColor: 'surfaceOpaque', height: 'fit-content', width: ['100%', '90%', '90%','1100px'], position: 'relative'}}>
           <Box 
-            ml={['auto','-20%']}
+            ml={['auto','auto','auto','-20%']}
             mx={'auto'} 
             p={['3','0']}
-            pl={['5','0']}
+            pl={['5','5','5','0']}
             pr={['0','0']}
             sx={{
               borderRadius: '12px', 
-              borderStyle: ['inset', 'solid'], 
+              borderStyle: ['inset', 'inset', 'inset', 'solid'], 
               borderColor: 'rgb(7 7 7)', 
-              borderWidth: [4,0], 
+              borderWidth: [4,4,4,0], 
               backgroundImage: "url('https://res.cloudinary.com/dxrjeyjpn/image/private/s--zgppMNZ6--/c_thumb,w_200,g_face/v1/KPWarz/KPHazeOrb_lr5wj5.png')", 
               backgroundColor: 'surfaceSecondary', 
-              height: ['fit-content', '300px'],  
-              width: ['80%', '300px'], 
-              position: ['relative', 'sticky'],  
-              left: ['0','-20%'], 
-              top: ['0','12%'],
-              backgroundSize: ['25%', '65%'], 
+              height: ['fit-content', 'fit-content', 'fit-content', '300px'],  
+              width: ['80%', '80%', '80%','300px'], 
+              position: ['relative', 'relative', 'relative', 'sticky'],  
+              left: ['0','0','0','-20%'], 
+              top: [0, 0, 0,'12%'],
+              backgroundSize: ['25%', '25%', '12%', '65%'], 
               backgroundRepeat: 'no-repeat', 
-              backgroundPosition: ['5% 50%','50% 5%'], 
+              backgroundPosition: ['5% 50%','5% 50%','5% 50%','50% 5%'], 
               }}
             >
             <Flex sx={{justifyContent: 'flex-end', alignItems: 'center', flexDirection: 'column', height: '100%'}}>
-              <Text sx={{ variant: 'text.heading', color: 'background'}}>Victor Reyes</Text>
+              <Text pl={[0,0,4,0 ]} sx={{ variant: 'text.heading', color: 'background', alignSelf: ['center', 'center', 'start', 'center']}}>Victor Reyes</Text>
               <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', textAlign: 'center', padding: '12px 20px'}}>Aspiring Software Engineer Dedicated Web Developer.</Text>
             </Flex>
           </Box>
           
-          <Flex sx={{flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', paddingTop: '4.5%', marginTop: [0,'-300px']}}>
-            <Flex px={[0,6]} sx={{flexDirection: 'column', gap: [2,4]}}>
+          <Flex sx={{flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', paddingTop: '4.5%', marginTop: [0, 0, 0, '-300px']}}>
+            <Flex px={[0, 0, 3, 6]} sx={{flexDirection: 'column', gap: [2,4]}}>
               <Text sx={{ variant: 'text.heading', color: 'text', padding: '12px 20px'}}>Hi, I am Victor</Text>
               <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '12px 20px'}}>Seeking a role in a cross-functional team with a fontSize: [3,4]clear product vision, where I can leverage my front-end development skills, automated testing expertise, and passion for code quality. Eager to contribute to projects ranging from conceptualization to implementation, while continuously learning and collaborating with fellow team members. While I have only been focused formally on improving my ability to perform the duties of a software developer for two years or so, I have been interested in development work for many years. With interests from basic computer science to game development I have exposed myself to many facets of development. After my experience with Full Stack Open, The Odin Project, and my most recent endeavors with Robot Builders Inc. I have picked up skills ranging from basic javascript to react and react based frameworks to Dotnet development with BlazorWasm, C#, and component and styling libraries.</Text>
               <Text sx={{ variant: 'text.heading', color: 'text', padding: '12px 20px'}}>Skills</Text>
