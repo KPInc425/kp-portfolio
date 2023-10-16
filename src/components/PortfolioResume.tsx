@@ -6,19 +6,41 @@ const PortfolioResume = () => {
   return (
     <>        
       <Flex pt='3' pb='5' sx={{position: 'relative', width: '99vw', flexDirection: 'column', justifyContent: 'center', scrollSnapAlign: 'start'}}>
-        <Box mx='auto' py='4' sx={{borderRadius: '12px', backgroundColor: 'surfaceOpaque', height: 'fit-content', width: '1100px', position: 'relative'}}>
-          <Box sx={{borderRadius: '12px', backgroundImage: "url('https://res.cloudinary.com/dxrjeyjpn/image/private/s--zgppMNZ6--/c_thumb,w_200,g_face/v1/KPWarz/KPHazeOrb_lr5wj5.png')", backgroundColor: 'surfaceSecondary', height: '300px', width: '300px', position: 'sticky', left: '-20%', top: '20%', backgroundSize: 'container', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 5%', marginLeft: '-20%'}}>
+        <Box mx='auto' py='4' sx={{borderRadius: '12px', backgroundColor: 'surfaceOpaque', height: 'fit-content', width: ['100%','1100px'], position: 'relative'}}>
+          <Box 
+            ml={['auto','-20%']}
+            mx={'auto'} 
+            p={['3','0']}
+            pl={['5','0']}
+            pr={['0','0']}
+            sx={{
+              borderRadius: '12px', 
+              borderStyle: ['inset', 'solid'], 
+              borderColor: 'rgb(7 7 7)', 
+              borderWidth: [4,0], 
+              backgroundImage: "url('https://res.cloudinary.com/dxrjeyjpn/image/private/s--zgppMNZ6--/c_thumb,w_200,g_face/v1/KPWarz/KPHazeOrb_lr5wj5.png')", 
+              backgroundColor: 'surfaceSecondary', 
+              height: ['fit-content', '300px'],  
+              width: ['80%', '300px'], 
+              position: ['relative', 'sticky'],  
+              left: ['0','-20%'], 
+              top: ['0','12%'],
+              backgroundSize: ['25%', '65%'], 
+              backgroundRepeat: 'no-repeat', 
+              backgroundPosition: ['5% 50%','50% 5%'], 
+              }}
+            >
             <Flex sx={{justifyContent: 'flex-end', alignItems: 'center', flexDirection: 'column', height: '100%'}}>
               <Text sx={{ variant: 'text.heading', color: 'background'}}>Victor Reyes</Text>
               <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', textAlign: 'center', padding: '12px 20px'}}>Aspiring Software Engineer Dedicated Web Developer.</Text>
             </Flex>
           </Box>
           
-          <Flex sx={{flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', paddingTop: '4.5%', marginTop: '-300px'}}>
-            <Flex px='6' sx={{flexDirection: 'column', gap: '4'}}>
-              <Text sx={{ variant: 'text.heading', color: 'text'}}>Hi, I am Victor</Text>
-              <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '12px 20px'}}>Seeking a role in a cross-functional team with a clear product vision, where I can leverage my front-end development skills, automated testing expertise, and passion for code quality. Eager to contribute to projects ranging from conceptualization to implementation, while continuously learning and collaborating with fellow team members. While I have only been focused formally on improving my ability to perform the duties of a software developer for two years or so, I have been interested in development work for many years. With interests from basic computer science to game development I have exposed myself to many facets of development. After my experience with Full Stack Open, The Odin Project, and my most recent endeavors with Robot Builders Inc. I have picked up skills ranging from basic javascript to react and react based frameworks to Dotnet development with BlazorWasm, C#, and component and styling libraries.</Text>
-              <Text sx={{ variant: 'text.heading', color: 'text'}}>Skills</Text>
+          <Flex sx={{flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', paddingTop: '4.5%', marginTop: [0,'-300px']}}>
+            <Flex px={[0,6]} sx={{flexDirection: 'column', gap: [2,4]}}>
+              <Text sx={{ variant: 'text.heading', color: 'text', padding: '12px 20px'}}>Hi, I am Victor</Text>
+              <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '12px 20px'}}>Seeking a role in a cross-functional team with a fontSize: [3,4]clear product vision, where I can leverage my front-end development skills, automated testing expertise, and passion for code quality. Eager to contribute to projects ranging from conceptualization to implementation, while continuously learning and collaborating with fellow team members. While I have only been focused formally on improving my ability to perform the duties of a software developer for two years or so, I have been interested in development work for many years. With interests from basic computer science to game development I have exposed myself to many facets of development. After my experience with Full Stack Open, The Odin Project, and my most recent endeavors with Robot Builders Inc. I have picked up skills ranging from basic javascript to react and react based frameworks to Dotnet development with BlazorWasm, C#, and component and styling libraries.</Text>
+              <Text sx={{ variant: 'text.heading', color: 'text', padding: '12px 20px'}}>Skills</Text>
                 <Flex sx={{flexDirection: 'column'}}>
                     <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '12px 20px'}}><strong>Front-end development:</strong> HTML, CSS, and JavaScript. Experience with React.js, React based frameworks, BlazorWASM, Mudblazor, CSS style frameworks.</Text>
                     <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '12px 20px'}}><strong>Version Control:</strong> Git.</Text>
@@ -29,14 +51,14 @@ const PortfolioResume = () => {
                     <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '12px 20px'}}><strong>Communication:</strong> Excellent communication and collaboration skills.</Text>
 
                 </Flex>
-              <Text sx={{ variant: 'text.heading', color: 'text'}}>Experience</Text>
+              <Text sx={{ variant: 'text.heading', color: 'text', padding: '12px 20px'}}>Experience</Text>
                 <Flex sx={{flexDirection: 'column', gap: '3'}}>
                   <Flex sx={{flexDirection: 'column'}}>
-                    <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '0px 20px', fontSize: '4', fontWeight: 'bold'}}>
+                    <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '0px 20px', fontSize: [3,4], fontWeight: 'bold'}}>
                       Software Engineer - Robot Builders Inc. - Remote February 2023 to April 2023
                     </Text>
                     <Text sx={{ variant: 'text.infoCardDescription', color: 'rgb(95 95 95)', padding: '0px 20px'}}>
-                      Developed Interactive Story Game: <Link href="https://tmra.ai" >tmra.ai</Link>
+                      Developed Interactive Story Game: <Link sx={{variant: 'links.nav'}} href="https://tmra.ai" target="_blank">tmra.ai</Link>
                     </Text>
                     <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '12px 20px'}}>
                       Leveraged technical expertise in front-end development to drive the development, conception to completion. Contributed to the design, development, and deployment pipeline. Worked closely with a cross-functional team, collaborated on projects spanning from conceptualization to implementation, ensuring high-quality deliverables and meeting project milestones
@@ -44,7 +66,7 @@ const PortfolioResume = () => {
                     </Text>
                   </Flex>
                   <Flex sx={{flexDirection: 'column'}}>
-                    <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '0px 20px', fontSize: '4', fontWeight: 'bold'}}>
+                    <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '0px 20px', fontSize: [3,4], fontWeight: 'bold'}}>
                       Full Stack Open - Full Stack Web Development Course - Online Learning, 2023
                     </Text>
                     <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '12px 20px'}}>
@@ -52,7 +74,7 @@ const PortfolioResume = () => {
                     </Text>
                   </Flex>
                   <Flex sx={{flexDirection: 'column'}}>
-                    <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '0px 20px', fontSize: '4', fontWeight: 'bold'}}>
+                    <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '0px 20px', fontSize: [3,4], fontWeight: 'bold'}}>
                       The Odin Project - Full Stack Web Development Curriculum - Online Learning, 2023
                     </Text>
                     <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '12px 20px'}}>
@@ -60,7 +82,7 @@ const PortfolioResume = () => {
                     </Text>
                   </Flex>
                 </Flex>
-              <Text sx={{ variant: 'text.heading', color: 'text'}}>Education</Text>
+              <Text sx={{ variant: 'text.heading', color: 'text', padding: '12px 20px'}}>Education</Text>
               <Flex sx={{flexDirection: 'column', gap: '3'}}>
                 <Flex sx={{flexDirection: 'column'}}>
                   <Text sx={{ variant: 'text.infoCardDescription', color: 'grey', padding: '0px 20px', fontSize: '3', fontWeight: 'bold'}}>

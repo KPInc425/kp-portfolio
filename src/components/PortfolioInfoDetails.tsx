@@ -8,7 +8,7 @@ type PortfolioInfoDetailsProps = {
 
 const PortfolioInfoDetails = ({heading, description, graphicText} : PortfolioInfoDetailsProps) => {
     return (
-        <Box sx={{borderRadius: '12px', backgroundColor: 'surfaceGlass', height: ['fit-content'], width: ['100%', '100%','fit-content'], maxWidth: '1000px'}}>
+        <Box pb={3} sx={{borderRadius: '12px', backgroundColor: 'surfaceGlass', height: ['fit-content'], width: ['100%', '100%','fit-content'], maxWidth: '1000px'}}>
             <Flex sx={{justifyContent: ['center','space-between'], alignItems: ['center','space-between'], flexDirection: ['column', 'row']}}>
                 <Box pt={['4','100px']} px={['4','5']} sx={{width: ['100%','60%'], textWrap: 'balance'}}>
                     <Text sx={{variant: 'text.infoCardHeading'}}>{heading}</Text>
