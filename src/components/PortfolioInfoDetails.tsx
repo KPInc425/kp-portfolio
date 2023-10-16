@@ -14,9 +14,9 @@ const PortfolioInfoDetails = ({heading, description, graphicText} : PortfolioInf
                     <Text sx={{variant: 'text.infoCardHeading'}}>{heading}</Text>
                 </Box>
                 <Box mr='4' mt='4' sx={{border: '8px solid #20421A', borderRadius: '12px', height: '175px', width: ['100%','300px']}}>
-                    <Box ml={['0','-5']} mt='4' sx={{backgroundColor: 'black', borderRadius: '12px', height: '175px', width: ['100%','300px']}}>
-                        <Box ml='25px' sx={{display: 'relative', textAlign: ['center', 'start'], textWrap: 'balance'}}>
-                            <Text mt={['0','-4']} p={['2', '0']} sx={{variant: 'text.infoCardGraphic', display: 'inline-block', textShadow: '0 0 20px #15B400', position: ['absolute', 'relative'], transform: ['translateX(-50%)', 'none'] }}>{graphicText}</Text>
+                    <Box ml={['0','-5']} mt='4' sx={{backgroundColor: 'black', borderRadius: '12px', height: '175px', width: ['100%','300px'], position: 'relative'}}>
+                        <Box ml='25px' sx={{textAlign: ['center', 'start'], textWrap: 'balance'}}>
+                            <Text mt={['0','-4']} p={['2', '0']} sx={{variant: 'text.infoCardGraphic', display: 'inline-block', textShadow: '0 0 20px #15B400', position: ['absolute', 'relative'], top: '50%', transform: ['translate(-50%,-50%)', 'none'], width: ['90%', '100%'] }}>{graphicText}</Text>
                         </Box>
                     </Box>
                 </Box>

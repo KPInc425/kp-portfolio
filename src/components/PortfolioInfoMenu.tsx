@@ -82,7 +82,7 @@ const PortfolioInfoMenu = ({activeTab, setActiveTab} : PortfolioInfoMenuProps) =
                 </Flex>
             </Flex>
             {showMenu && (
-                <Flex sx={{flexDirection: 'column', position: 'absolute', backgroundColor: 'surfaceOpaque', top: '50px', right: '10px', borderRadius: '0 0 12px 12px'}}>
+                <Flex sx={{flexDirection: 'column', position: 'absolute', backgroundColor: 'surfaceOpaque', top: '50px', right: '10px', borderRadius: '0 0 12px 12px', zIndex: '2'}}>
                     { menuItems.map((viewTab) => {
                         return ( 
                             <Flex
