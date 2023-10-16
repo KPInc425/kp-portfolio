@@ -31,8 +31,8 @@ const PortfolioProject = ({project}: PortfolioProjectProps) => {
           </Flex>
           <Flex pt='4' sx={{alignItems: 'center', gap: '4'}}>
             <Flex pl='6' sx={{flexDirection: 'column', width: '60%', gap: '3'}}>
-              {project.bullets.map((bullet) => (
-                <Text sx={{ variant: 'text.infoCardDescription', color: 'grey'}}>{bullet}</Text>
+              {project.bullets.map((bullet, index) => (
+                <Text key={index} sx={{ variant: 'text.infoCardDescription', color: 'grey'}}>{bullet}</Text>
               ))}
             </Flex>
             <Image src={project.imageUrl} sx={{borderRadius: '12px', width: '350px', height: '200px'}}/>
