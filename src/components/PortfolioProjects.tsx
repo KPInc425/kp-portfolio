@@ -40,7 +40,19 @@ const projects = [
     ],
     imageUrl: 'https://source.unsplash.com/sOKJDYHGCjc',
     projectUrl: 'https://kpwarz.netlify.app/'
-  }
+  },
+  {
+    title: 'KnG Auto Detail',
+    tagline: 'Crafting Brilliance, One Car at a Time',
+    description: 'KnG Auto Detail is a local auto detailing business that needed a website to showcase their work and provide a way for customers to contact them. It was built with the NextJs framework and Theme UI for styling. It is a simple site that is easy to navigate and provides all the information a customer would need to contact them. It was build responsively so it looks great on all devices. It was a fun project to work on and I am very happy with the results.',
+    bullets: [
+      'Simple small business website to showcase services and provide contact information',
+      'Built with NextJs and Theme UI for styling',
+      'Built with mobile in mind, so it looks great on all devices'
+    ],
+    imageUrl: 'https://res.cloudinary.com/dxrjeyjpn/image/private/s--IflweC9Y--/v1697566205/KnGAuto/LandingExample_rattsm.jpg',
+    projectUrl: 'https://kngautodetail.netlify.app/kng/about'
+  },
 ]
 
 const PortfolioProjects = () => {
