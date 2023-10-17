@@ -5,10 +5,9 @@ import MainHeader from "../components/MainHeader";
 
 type MainLayoutProps = {
     children: React.ReactNode;
-    activeTab: string;
 };
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children, activeTab }) => {
+const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <>
       <MainHeader />

@@ -15,7 +15,7 @@ function App() {
   )
   return (
     <>
-      <MainLayout activeTab={activeTab}>
+      <MainLayout>
         <Flex m={['0','5']} sx={{justifyContent: 'center', alignItems: 'center', gap: '5', flexDirection: ['column', 'column', 'column', 'column', 'row']}}>
           <VRLogoCard />
           <PortfolioInfo activeTab={activeTab} setActiveTab={setActiveTab} />
