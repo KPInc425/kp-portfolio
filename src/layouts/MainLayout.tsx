@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Box } from "theme-ui";
+import { Box, Flex } from "theme-ui";
 import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
 
@@ -9,11 +9,13 @@ type MainLayoutProps = {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <>
-      <MainHeader />
-      <Box my={['0','4']}>{children}</Box>
+    <Flex sx={{flexDirection: 'column', justifyContent: 'space-between', minHeight: '100vh'}}>
+      <Box>
+        <MainHeader />
+        <Box my={['0','4']}>{children}</Box>
+      </Box>
       <Footer />
-    </>
+    </Flex>
   );
 };
 
