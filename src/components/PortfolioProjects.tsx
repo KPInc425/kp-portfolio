@@ -5,19 +5,6 @@ import SlantedBackground from "./SlandtedBackground"
 
 const projectsVictor = [
   {
-    title: 'TMRA Landing Page',
-    tagline: 'Landing page for TMRA.ai',
-    description: "Get informed about one of the first AI generated choose your own adventure game. A page filled with examples of what the game can generate and info about what kind of features the game holds. It was build ",
-    bullets: [
-      'ChatGPT for story generation and Stable Diffusion for image generation',
-      'Integration with print service and pdf generation for physical copies of your generated stories',
-      'Integration of gallery to webshop to print your favorite generated images on physical media',
-      'Interactive story telling with user driven choices to direct the narrative',
-    ],
-    imageUrl: 'https://res.cloudinary.com/dxrjeyjpn/image/private/s--zwekjVui--/v1695340529/PortfolioSite/TMRAExample_y1y6ow.jpg',
-    projectUrl: 'https://tmra.ai'
-  },
-  {
     title: 'TMRA.ai',
     tagline: 'Interactive Choose Your Own Adventure Game for the Web',
     description: "Be a part of generating your own 'player's choice adventure' stories with the power of ChatGPT, get immersed in the story with the help of StableDiffusion image generation, and share your stories with the world! With just a simple prompt stating your purpose and type of adventure, you can generate a story with the help of AI. Each scene of the story will come with an AI generated image and options for your next action to direct the story, you can even input a custom option for more control of the narrative.  The possibilities are endless!",
@@ -29,6 +16,18 @@ const projectsVictor = [
     ],
     imageUrl: 'https://res.cloudinary.com/dxrjeyjpn/image/private/s--zwekjVui--/v1695340529/PortfolioSite/TMRAExample_y1y6ow.jpg',
     projectUrl: 'https://app.tmra.ai'
+  },
+  {
+    title: 'TMRA Landing Page',
+    tagline: 'Landing page for TMRA.ai',
+    description: "Get informed about one of the first AI generated choose your own adventure game. A page filled with examples of what the game can generate and info about what kind of features the game holds. A single page app with a simple design to showcase the game and get people excited about it. It was build using React, styled with Theme Ui, bundled with Vite, and used an NodeJs backend with a small express server for sending email's through a sendGrid API to the team.",
+    bullets: [
+      'Simple landing page to showcase the game and get people excited about it',
+      "It was built because the previous site was limited by the hosting service's site building tools and we wanted more control over the design and functionality",
+      '',
+    ],
+    imageUrl: 'https://res.cloudinary.com/dxrjeyjpn/image/private/s--zwekjVui--/v1695340529/PortfolioSite/TMRAExample_y1y6ow.jpg',
+    projectUrl: 'https://tmra.ai'
   },
   {
     title: 'Word Search Kingdom',
@@ -55,6 +54,7 @@ const projectsVictor = [
     projectUrl: 'https://kngautodetail.netlify.app/kng/about'
   },
 ]
+
 const projectsKP = [
   {
     title: 'KPWarz',
