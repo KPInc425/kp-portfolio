@@ -3,7 +3,20 @@ import { Flex } from "theme-ui"
 import PortfolioProject from "./PortfolioProject"
 import SlantedBackground from "./SlandtedBackground"
 
-const projects = [
+const projectsVictor = [
+  {
+    title: 'TMRA Landing Page',
+    tagline: 'Landing page for TMRA.ai',
+    description: "Get informed about one of the first AI generated choose your own adventure game. A page filled with examples of what the game can generate and info about what kind of features the game holds. It was build ",
+    bullets: [
+      'ChatGPT for story generation and Stable Diffusion for image generation',
+      'Integration with print service and pdf generation for physical copies of your generated stories',
+      'Integration of gallery to webshop to print your favorite generated images on physical media',
+      'Interactive story telling with user driven choices to direct the narrative',
+    ],
+    imageUrl: 'https://res.cloudinary.com/dxrjeyjpn/image/private/s--zwekjVui--/v1695340529/PortfolioSite/TMRAExample_y1y6ow.jpg',
+    projectUrl: 'https://tmra.ai'
+  },
   {
     title: 'TMRA.ai',
     tagline: 'Interactive Choose Your Own Adventure Game for the Web',
@@ -15,7 +28,7 @@ const projects = [
       'Interactive story telling with user driven choices to direct the narrative',
     ],
     imageUrl: 'https://res.cloudinary.com/dxrjeyjpn/image/private/s--zwekjVui--/v1695340529/PortfolioSite/TMRAExample_y1y6ow.jpg',
-    projectUrl: 'https://tmra.ai'
+    projectUrl: 'https://app.tmra.ai'
   },
   {
     title: 'Word Search Kingdom',
@@ -30,18 +43,6 @@ const projects = [
     projectUrl: 'https://wordsearchkingdom.com'
   },
   {
-    title: 'KPWarz',
-    tagline: 'Old idea made new, get your hustle up!',
-    description: 'A classic made modern, redone once again with some new twists. I have wanted to remake this type of game for a very long time, ever since I played it on a calculator in highschool, 20 years later, I am finally close to realizing it. It was built with RedwoodJS which incorporates React, Typescript, Storybook for frontend and, GraphQL, Prisma, for the backend, Postgres for the database, and Jest for testing. Redwood is a greate framework to handle the full stack. KPWarz is a work in progress, but I am very excited to see it come to life. I chose to work with Mantine for the styling framework so there was some coherence in the design. I am very happy with the results so far, and I am excited to continue working on it and adding new features to modernaize it.',
-    bullets: [
-      'New twist on an old classic, with a modern design and new features',
-      'Classic from rags to riches story, with extra choices to change your starting point and difficulty',
-      'Built in dev blog, to keep players up to date on changes and future endeavors.'
-    ],
-    imageUrl: 'https://source.unsplash.com/sOKJDYHGCjc',
-    projectUrl: 'https://kpwarz.netlify.app/'
-  },
-  {
     title: 'KnG Auto Detail',
     tagline: 'Crafting Brilliance, One Car at a Time',
     description: 'KnG Auto Detail is a local auto detailing business that needed a website to showcase their work and provide a way for customers to contact them. It was built with the NextJs framework and Theme UI for styling. It is a simple site that is easy to navigate and provides all the information a customer would need to contact them. It was build responsively so it looks great on all devices. It was a fun project to work on and I am very happy with the results.',
@@ -54,11 +55,25 @@ const projects = [
     projectUrl: 'https://kngautodetail.netlify.app/kng/about'
   },
 ]
+const projectsKP = [
+  {
+    title: 'KPWarz',
+    tagline: 'Old idea made new, get your hustle up!',
+    description: 'A classic made modern, redone once again with some new twists. I have wanted to remake this type of game for a very long time, ever since I played it on a calculator in highschool, 20 years later, I am finally close to realizing it. It was built with RedwoodJS which incorporates React, Typescript, Storybook for frontend and, GraphQL, Prisma, for the backend, Postgres for the database, and Jest for testing. Redwood is a greate framework to handle the full stack. KPWarz is a work in progress, but I am very excited to see it come to life. I chose to work with Mantine for the styling framework so there was some coherence in the design. I am very happy with the results so far, and I am excited to continue working on it and adding new features to modernaize it.',
+    bullets: [
+      'New twist on an old classic, with a modern design and new features',
+      'Classic from rags to riches story, with extra choices to change your starting point and difficulty',
+      'Built in dev blog, to keep players up to date on changes and future endeavors.'
+    ],
+    imageUrl: 'https://source.unsplash.com/sOKJDYHGCjc',
+    projectUrl: 'https://kpwarz.netlify.app/'
+  },
+]
 
 const PortfolioProjects = () => {
     return (
       <Flex m={[3,5]} sx={{justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: [3,3,4,4,6], position: 'relative'}}>
-        {projects.map((project, index) => (
+        {projectsVictor.map((project, index) => (
           <Flex pb={[0,0,4]} key={index} sx={{position: 'relative', width: '99vw', height: ['100%','100%','100%','100%','100vh'], overflow: 'hidden', flexDirection: 'column', justifyContent: 'center', scrollSnapAlign: 'start'}}>
             <SlantedBackground/>
             <PortfolioProject project={project}/>
