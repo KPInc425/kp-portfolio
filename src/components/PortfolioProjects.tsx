@@ -20,11 +20,11 @@ const projectsVictor = [
   {
     title: 'TMRA Landing Page',
     tagline: 'Landing page for TMRA.ai',
-    description: "Get informed about one of the first AI generated choose your own adventure game. A page filled with examples of what the game can generate and info about what kind of features the game holds. A single page app with a simple design to showcase the game and get people excited about it. It was build using React, styled with Theme Ui, bundled with Vite, and used an NodeJs backend with a small express server for sending email's through a sendGrid API to the team.",
+    description: "Get informed about one of the first AI generated choose your own adventure game. A page filled with examples of what the game can generate and info about what kind of features the game holds. A single page app with a simple design to showcase the game and get people excited about it. It was build using React, styled with Theme Ui and some Radix Components, bundled with Vite, and used an NodeJs backend with a small express server for sending email's through a sendGrid API to the team.",
     bullets: [
       'Simple landing page to showcase the game and get people excited about it',
       "It was built because the previous site was limited by the hosting service's site building tools and we wanted more control over the design and functionality",
-      '',
+      'Built with React, Theme UI, Radix Components, NodeJs, Express, and Vite for bundling',
     ],
     imageUrl: 'https://res.cloudinary.com/dxrjeyjpn/image/private/s--zwekjVui--/v1695340529/PortfolioSite/TMRAExample_y1y6ow.jpg',
     projectUrl: 'https://tmra.ai'
