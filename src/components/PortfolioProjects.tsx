@@ -55,20 +55,20 @@ const projectsVictor = [
   },
 ]
 
-const projectsKP = [
-  {
-    title: 'KPWarz',
-    tagline: 'Old idea made new, get your hustle up!',
-    description: 'A classic made modern, redone once again with some new twists. I have wanted to remake this type of game for a very long time, ever since I played it on a calculator in highschool, 20 years later, I am finally close to realizing it. It was built with RedwoodJS which incorporates React, Typescript, Storybook for frontend and, GraphQL, Prisma, for the backend, Postgres for the database, and Jest for testing. Redwood is a greate framework to handle the full stack. KPWarz is a work in progress, but I am very excited to see it come to life. I chose to work with Mantine for the styling framework so there was some coherence in the design. I am very happy with the results so far, and I am excited to continue working on it and adding new features to modernaize it.',
-    bullets: [
-      'New twist on an old classic, with a modern design and new features',
-      'Classic from rags to riches story, with extra choices to change your starting point and difficulty',
-      'Built in dev blog, to keep players up to date on changes and future endeavors.'
-    ],
-    imageUrl: 'https://source.unsplash.com/sOKJDYHGCjc',
-    projectUrl: 'https://kpwarz.netlify.app/'
-  },
-]
+// const projectsKP = [
+//   {
+//     title: 'KPWarz',
+//     tagline: 'Old idea made new, get your hustle up!',
+//     description: 'A classic made modern, redone once again with some new twists. I have wanted to remake this type of game for a very long time, ever since I played it on a calculator in highschool, 20 years later, I am finally close to realizing it. It was built with RedwoodJS which incorporates React, Typescript, Storybook for frontend and, GraphQL, Prisma, for the backend, Postgres for the database, and Jest for testing. Redwood is a greate framework to handle the full stack. KPWarz is a work in progress, but I am very excited to see it come to life. I chose to work with Mantine for the styling framework so there was some coherence in the design. I am very happy with the results so far, and I am excited to continue working on it and adding new features to modernaize it.',
+//     bullets: [
+//       'New twist on an old classic, with a modern design and new features',
+//       'Classic from rags to riches story, with extra choices to change your starting point and difficulty',
+//       'Built in dev blog, to keep players up to date on changes and future endeavors.'
+//     ],
+//     imageUrl: 'https://source.unsplash.com/sOKJDYHGCjc',
+//     projectUrl: 'https://kpwarz.netlify.app/'
+//   },
+// ]
 
 const PortfolioProjects = () => {
     return (
