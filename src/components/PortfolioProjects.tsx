@@ -42,6 +42,18 @@ const projectsVictor = [
     projectUrl: 'https://wordsearchkingdom.com'
   },
   {
+    title: 'Willows Wonderland',
+    tagline: 'Bringing imagination to life, stroke by stroke',
+    description: 'Willows Wonderland is a portfolio website for a local artist. It is built to reflect the artists spirited style. It is a full stack application built with RedwoodJs, styled with Mantine, and deployed with Netlify. Simple authorization and authentication was added, along with an admin tools page so the artist can manage their desired images for their gallery. The images are integrated with Cloudinary for easy uploading and deleting of images by the artist. Deployed with Netlify and connected to a Supabase PostgreSql database for persistance of data. It provided lots of learnings of connecting many moving peices together and styled to the artists liking.',
+    bullets: [
+      'Full stack application built with RedwoodJs, styled with Mantine, and deployed with Netlify',
+      'Simple auth and admin tools page for the artist to manage their gallery',
+      'Integrated with Cloudinary for easy uploading and deleting of images by the artist',
+    ],
+    imageUrl: 'https://res.cloudinary.com/dxrjeyjpn/image/private/s--Q7nMVXgK--/v1698033965/PortfolioSite/WillowWonderlandExample_efiogp.jpg',
+    projectUrl: 'https://willows-wonderland.netlify.app/'
+  },
+  {
     title: 'KnG Auto Detail',
     tagline: 'Crafting Brilliance, One Car at a Time',
     description: 'KnG Auto Detail is a local auto detailing business that needed a website to showcase their work and provide a way for customers to contact them. It was built with the NextJs framework and Theme UI for styling. It is a simple site that is easy to navigate and provides all the information a customer would need to contact them. It was build responsively so it looks great on all devices. It was a fun project to work on and I am very happy with the results.',
