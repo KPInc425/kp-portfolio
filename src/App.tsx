@@ -7,6 +7,7 @@ import { Flex } from 'theme-ui'
 import PortfolioInfo from './components/PortfolioInfo'
 import PortfolioProjects from './components/PortfolioProjects'
 import PortfolioResume from './components/PortfolioResume'
+import PortfolioContact from './components/PortfolioContact'
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
         )}
         { activeTab === 'Resume' && (
           <PortfolioResume />
+        )}
+        { activeTab === 'Contact' && (
+          <PortfolioContact /> 
         )}
       </MainLayout>
     </>

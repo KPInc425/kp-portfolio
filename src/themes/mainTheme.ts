@@ -45,6 +45,18 @@ export const mainTheme: Theme = {
                 color: 'primary',
             },
         },
+        social: {
+            fontFamily: 'heading',
+            color: 'text',
+            fontWeight: '300',
+            textDecoration: 'none',
+            ':hover': {
+                // color: 'primary',
+                borderColor: 'primary',
+                boxShadow: '1px 1px 10px green',
+                textShadow: '2px 2px 10px green',
+            },
+        },
     },
     buttons: {
         primary: {

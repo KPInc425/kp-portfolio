@@ -26,7 +26,7 @@ const projectsVictor = [
       "It was built because the previous site was limited by the hosting service's site building tools and we wanted more control over the design and functionality",
       'Built with React, Theme UI, Radix Components, NodeJs, Express, and Vite for bundling',
     ],
-    imageUrl: 'https://res.cloudinary.com/dxrjeyjpn/image/private/s--zwekjVui--/v1695340529/PortfolioSite/TMRAExample_y1y6ow.jpg',
+    imageUrl: 'https://res.cloudinary.com/dxrjeyjpn/image/private/s--B9qT-Iw1--/v1699392666/PortfolioSite/TMRALanding_gtw5oc.jpg',
     projectUrl: 'https://tmra.ai'
   },
   {
@@ -50,7 +50,7 @@ const projectsVictor = [
       'Simple auth and admin tools page for the artist to manage their gallery',
       'Integrated with Cloudinary for easy uploading and deleting of images by the artist',
     ],
-    imageUrl: 'https://res.cloudinary.com/dxrjeyjpn/image/private/s--Q7nMVXgK--/v1698033965/PortfolioSite/WillowWonderlandExample_efiogp.jpg',
+    imageUrl: 'https://res.cloudinary.com/dxrjeyjpn/image/private/s--94AVblML--/v1699393171/PortfolioSite/WillowsWonderland_xtws8r.jpg',
     projectUrl: 'https://willows-wonderland.netlify.app/'
   },
   {
