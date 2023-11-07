@@ -6,7 +6,7 @@ import { Box, Flex, Link, Text } from "theme-ui"
 const PortfolioContact = () => {
   return (
     <>        
-      <Flex pt={['6', '3', '5', '6']} pb='5' sx={{position: 'relative', width: '99vw', flexDirection: 'column', justifyContent: 'center', scrollSnapAlign: 'start'}}>
+      <Flex pt={['6', '3', '5', '6']} pb='5' sx={{position: 'relative', width: '99vw', flexDirection: 'column', justifyContent: 'center'}}>
         <Box mx='auto' py='4' sx={{borderRadius: '12px', backgroundColor: 'surfaceOpaque', height: 'fit-content', position: 'relative'}}>
           <Box 
             // ml={['auto','auto','auto','-20%']}

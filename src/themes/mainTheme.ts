@@ -56,6 +56,13 @@ export const mainTheme: Theme = {
                 boxShadow: '1px 1px 10px green',
                 textShadow: '2px 2px 10px green',
             },
+            ':active': {
+                // color: 'primary',
+                borderColor: 'white',
+                boxShadow: '1px 1px 10px white',
+                textShadow: '2px 2px 10px white',
+                borderStyle: 'inset',
+            },
         },
     },
     buttons: {
