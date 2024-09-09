@@ -31,7 +31,7 @@ const projectsVictor = [
   },
   {
     title: 'Word Search Kingdom',
-    tagline: 'Nostalic Word Search Game with a modern twist',
+    tagline: 'Nostalgic Word Search Game with a modern twist',
     description: 'Word Search Kingdom is a word search game with a twist. It is a nostalgic game that has been around for a long time, but it has been modernized with a new look and new features. It was built within the Dotnet ecosystem utilizing blazorWasm, Razor templates and Mudblazor for the frontend, C# to connect all the parts, and a SQL database. There is a suite of integrated automated testing from top to bottom of the stack. We have been very happy with the results so far, and We have big plans to make it more interactive and multiplayer with the potential of a story mode to really bring it to life.',
     bullets: [
       'Generate your own word search puzzles with custom words and sizes',
