@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Playwright MCP runtime dump
+.playwright-mcp/
+# Test artifacts: traces and logs (binary / large)
+tests/artifacts/traces/
+tests/artifacts/logs/
+# Node / build
+node_modules/
+dist/
