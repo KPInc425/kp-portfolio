@@ -9,6 +9,8 @@ import PortfolioProjects from './components/PortfolioProjects'
 import PortfolioResume from './components/PortfolioResume'
 import PortfolioContact from './components/PortfolioContact'
 import { Hero } from './components/sections/Hero'
+import { BentoIntro } from './components/sections/BentoIntro'
+import { FeaturedProjects } from './components/sections/FeaturedProjects'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useThemeTransition } from './context/ThemeContext'
 import { useTransitionEngine } from './hooks/useTransitionEngine'
@@ -100,6 +102,8 @@ function App() {
           </Flex>
         )}
 
+        { isNeoDark && activeTab === 'Home' && <BentoIntro /> }
+        { isNeoDark && activeTab === 'Home' && <FeaturedProjects /> }
         { activeTab === 'Portfolio' && (
           <PortfolioProjects projects={projectsApi.projects} />
         )}
