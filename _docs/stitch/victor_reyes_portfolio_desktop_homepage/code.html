@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Victor Reyes | Full-Stack Developer</title>
+<!-- Google Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Geist:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-surface": "#e3e2e2",
+                      "tertiary-fixed-dim": "#fdb878",
+                      "primary-container": "#00e676",
+                      "on-primary": "#003918",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "surface-container-lowest": "#0d0e0f",
+                      "surface-container-highest": "#343535",
+                      "surface-container-high": "#292a2a",
+                      "error-container": "#93000a",
+                      "on-error-container": "#ffdad6",
+                      "on-error": "#690005",
+                      "outline-variant": "#3b4a3d",
+                      "tertiary-container": "#ffba79",
+                      "secondary-fixed": "#e5e2e1",
+                      "on-tertiary-container": "#794810",
+                      "surface-container-low": "#1a1c1c",
+                      "on-background": "#e3e2e2",
+                      "primary": "#75ff9e",
+                      "background-deep": "#0A0A0A",
+                      "success-emerald": "#4CAF50",
+                      "primary-fixed-dim": "#00e475",
+                      "on-secondary-fixed-variant": "#474646",
+                      "on-surface": "#e3e2e2",
+                      "on-tertiary-fixed-variant": "#6a3c03",
+                      "surface-stroke": "#2A2A2A",
+                      "on-secondary-container": "#bab8b7",
+                      "tertiary-fixed": "#ffdcbf",
+                      "surface-elevated": "#1E1E1E",
+                      "surface-container": "#1e2020",
+                      "surface": "#121414",
+                      "inverse-on-surface": "#2f3131",
+                      "on-primary-fixed-variant": "#005226",
+                      "primary-fixed": "#62ff96",
+                      "secondary": "#c8c6c5",
+                      "on-primary-container": "#00612e",
+                      "tertiary": "#ffdec4",
+                      "secondary-container": "#4a4949",
+                      "on-secondary": "#313030",
+                      "on-tertiary": "#4b2800",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "error": "#ffb4ab",
+                      "outline": "#859585",
+                      "background": "#121414",
+                      "surface-dim": "#121414",
+                      "inverse-primary": "#006d35",
+                      "surface-variant": "#343535",
+                      "on-tertiary-fixed": "#2d1600",
+                      "on-primary-fixed": "#00210b",
+                      "code-highlight": "#16211A",
+                      "on-surface-variant": "#bacbb9",
+                      "surface-bright": "#383939",
+                      "surface-tint": "#00e475"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "gutter": "24px",
+                      "section-gap-mobile": "80px",
+                      "section-gap-desktop": "160px",
+                      "container-max": "1280px",
+                      "component-padding-sm": "12px",
+                      "component-padding-md": "24px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Inter"],
+                      "body-md": ["Inter"],
+                      "headline-md": ["Geist"],
+                      "display-xl": ["Geist"],
+                      "headline-lg-mobile": ["Geist"],
+                      "label-code": ["JetBrains Mono"],
+                      "label-caps": ["Inter"],
+                      "headline-lg": ["Geist"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                      "headline-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-code": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                      "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(30, 30, 30, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid #2A2A2A;
+        }
+        .emerald-glow:hover {
+            box-shadow: 0 0 30px rgba(0, 230, 118, 0.15);
+            border-color: #00e676;
+        }
+        body {
+            background-color: #0A0A0A;
+        }
+    </style>
+</head>
+<body class="bg-background-deep text-on-surface selection:bg-primary-container/30 selection:text-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl dark:bg-background/80 border-b border-surface-stroke">
+<nav class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="terminal">terminal</span>
+<span class="font-headline-md text-headline-md font-bold tracking-tighter text-on-surface">Victor Reyes</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary border-b-2 border-primary pb-1 font-label-caps text-label-caps hover:text-primary transition-colors duration-200" href="#home">Home</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors duration-200" href="#work">Work</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors duration-200" href="#about">About</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors duration-200" href="#contact">Contact</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-desktop flex flex-col items-center text-center" id="home">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-surface-stroke bg-surface-container mb-8">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-label-code text-label-code text-on-surface-variant">Available for new opportunities</span>
+</div>
+<h1 class="font-display-xl text-display-xl mb-8 max-w-4xl text-on-surface">
+                Welcome to my homepage, learn the inner workings of a full stack developer
+            </h1>
+<div class="flex gap-4">
+<button class="bg-primary-container text-on-primary px-8 py-4 rounded-lg font-label-caps text-label-caps font-bold transition-all hover:opacity-90 active:scale-95">
+                    View My Work
+                </button>
+<button class="border border-surface-stroke text-on-surface px-8 py-4 rounded-lg font-label-caps text-label-caps font-bold transition-all hover:border-primary hover:text-primary active:scale-95">
+                    Get in Touch
+                </button>
+</div>
+<div class="mt-20 w-full aspect-[21/9] rounded-xl border border-surface-stroke overflow-hidden relative group">
+<div class="absolute inset-0 bg-gradient-to-t from-background-deep via-transparent to-transparent z-10"></div>
+<img alt="Dashboard Preview" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A high-end SaaS dashboard interface with complex data visualizations, code snippets, and terminal windows. The scene is rendered in a minimalist-tech style with a deep black background and vibrant neon green accents. Soft ambient glows emanate from the UI elements, creating a sophisticated and high-energy atmosphere for a developer's portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY7GiR9IGl6FCkugYKHDjMQTii6HtOvpTBxEu9Qnlde23c6ZFfCvUdpGifEyTo6PE2aJc8sXHMs48BIZypMsF-GYooMbN9tkbt_Sk4jQHMBaVArvXA8ZAdcZBGf39yaz97cx2BX2JKf81BRR-NgTo6bZQI8zg9y4RlsbhF-abOQp5Y_5SYboqZZUcgihF4vBuJ2yY3XJ9rfytzpMKEVR5Z1EyKvvDufmsImoiHJzUN_8FB2j3gA7Lk-44okwhXCnBZgFnRg8nxZf8"/>
+</div>
+</section>
+<!-- Personal Intro & Tech Stack -->
+<section class="max-w-container-max mx-auto px-gutter py-20" id="intro">
+<div class="grid md:grid-cols-12 gap-gutter items-stretch">
+<!-- Bio Card -->
+<div class="md:col-span-7 glass-card p-component-padding-md rounded-xl flex flex-col justify-center">
+<div class="flex items-center gap-6 mb-8">
+<div class="w-24 h-24 rounded-xl border-2 border-primary/20 overflow-hidden shrink-0">
+<img alt="Victor Reyes" class="w-full h-full object-cover" data-alt="A professional and modern portrait of Victor Reyes, a full-stack developer with a focus on precision and technical proficiency. The lighting is dramatic with a subtle green tint reflecting off a tech-themed background. The overall style is clean, minimalist, and engineering-focused, mirroring a high-end corporate or technical headshot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkIdmmi57MZhJD23EAkUvzk5Sa5sVjjAmu2KasvlPkOOd0psYyEHJYlJau9qaT4Pmd_A6VyBGvkiec2bIvPhR-nftS0LOY_yUICmqCfhNMcv2zLJPCgtJQsxHIpO8lyvcP1z66EmHms8jxdrUT1K5moJclZCTiEiJRnQxYzA1yIWSqTZrVuKOHosx5Sbmh95FmCqLtwSO37JJaM3oPd7GVF4XPKmFkFA2sv4mXNVp6cjjleDO865h8Rlf-Dwz2_7HdR_0oupDay4g"/>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Victor Reyes</h3>
+<p class="font-label-code text-label-code text-primary">// Full-Stack Engineer</p>
+</div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        I am currently working on a few projects that push the boundaries of modern web architecture, focusing on building scalable, performant systems that solve real-world problems.
+                    </p>
+</div>
+<!-- Tech Grid -->
+<div class="md:col-span-5 glass-card p-component-padding-md rounded-xl">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-6 opacity-60">CORE TECHNOLOGY</h4>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container border border-surface-stroke hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="database">database</span>
+<span class="font-label-code text-label-code">PostgreSQL</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container border border-surface-stroke hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="javascript">javascript</span>
+<span class="font-label-code text-label-code">React / Next.js</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container border border-surface-stroke hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="node_js">javascript</span>
+<span class="font-label-code text-label-code">Node.js</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container border border-surface-stroke hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="cloud">cloud</span>
+<span class="font-label-code text-label-code">AWS Infra</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container border border-surface-stroke hover:border-primary/50 transition-colors col-span-2">
+<span class="material-symbols-outlined text-primary" data-icon="lock">lock</span>
+<span class="font-label-code text-label-code">OAuth 2.0 Security</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-desktop" id="about">
+<div class="relative py-20 px-12 rounded-3xl overflow-hidden border border-surface-stroke bg-surface-elevated group">
+<div class="absolute -right-20 -top-20 opacity-5 transition-transform duration-1000 group-hover:scale-110">
+<span class="material-symbols-outlined text-[400px] text-primary" data-icon="bolt">bolt</span>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg mb-8 text-on-surface">
+                        Powered by Passion and Enthusiasm
+                    </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                        Engineering isn't just about writing code; it's about the relentless pursuit of elegant solutions for complex challenges. Every line of code is an opportunity to optimize performance and improve user experience.
+                    </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        I specialize in creating robust digital ecosystems that are as scalable as they are beautiful. My process integrates technical rigor with a deep understanding of user-centric design principles.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Featured Projects Gallery -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-desktop" id="work">
+<div class="flex items-end justify-between mb-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Featured Projects</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Recent engineering challenges and their solutions.</p>
+</div>
+<button class="text-primary font-label-caps text-label-caps flex items-center gap-2 hover:translate-x-1 transition-transform">
+                    View All Projects <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="glass-card emerald-glow rounded-xl overflow-hidden group transition-all duration-300">
+<div class="h-48 overflow-hidden bg-surface-container">
+<img alt="Project Alpha" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A futuristic web application interface for a financial technology platform. The design features clean lines, glassmorphic panels, and neon green data visualizations. The lighting is sophisticated and moody, highlighting the high-performance nature of the engineering behind the platform. Deep blacks and vibrant greens dominate the visual landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeHtWuEeA4GmoDK-XdI-hsWhZH1dFV5VZukRWAOcRmKjkwshQBsFlQf1z1PKLGGHSvWH7pdzRModA7PRF1UsBTb_6Xe7aupUVHPpqp9w-ufeS7ZFZTZuwAQ7VZY7by4PoosPMqm121a1QNM353OF062TXR-eGB91WuMc59CTzcdxH2GSy3xD-9KjD6rr-m0dBfhAuoj6Yx1zqDcf9SQscH8lpBtrXP7Q6Sl8cwO44PiMhEFoJyC0J5zkN1_HY-xJ_NWtc9jXyBUo4"/>
+</div>
+<div class="p-component-padding-md">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-2 py-1 rounded bg-background-deep border border-surface-stroke text-primary font-label-code text-xs uppercase tracking-wider">Next.js</span>
+<span class="px-2 py-1 rounded bg-background-deep border border-surface-stroke text-primary font-label-code text-xs uppercase tracking-wider">Prisma</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Nexus Analytics</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Real-time data visualization engine for enterprise-level logistics tracking.</p>
+<a class="text-on-surface hover:text-primary font-label-caps text-label-caps transition-colors" href="#">Case Study →</a>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="glass-card emerald-glow rounded-xl overflow-hidden group transition-all duration-300">
+<div class="h-48 overflow-hidden bg-surface-container">
+<img alt="Project Beta" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A sleek mobile application interface for a secure identity management system. The visuals use complex gradients and semi-transparent layers to suggest security and modernity. The palette is strictly dark with neon emerald highlights that draw the eye to interactive elements. The aesthetic is high-tech, precise, and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3fdhC3mXNIBLAlUGynIFQMj1PwkDFEGn7izr9cWIuGyKsxWFWkauUxlXPziNv6Ui8bzFUb2mS3dlirfMS12TI_uoAhpOn6cd1W77iHue5LqRyCwCboIXgFXJFJbjZQ0WOgozvjfoyzVrdUcK5Yb9s0yKtJSFUw6_fBlTb8yAzVcWe4p7QJO5TWFxHB_YkqqJCzggNPDgKmYqMCRlvb4Mh2x01nGHwFXIi2fxiOa5WyKPVJfoGvIO1uwsocHyJ5qgoeClyFxh7U00"/>
+</div>
+<div class="p-component-padding-md">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-2 py-1 rounded bg-background-deep border border-surface-stroke text-primary font-label-code text-xs uppercase tracking-wider">OAuth</span>
+<span class="px-2 py-1 rounded bg-background-deep border border-surface-stroke text-primary font-label-code text-xs uppercase tracking-wider">Go</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">SecureKey Auth</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">A distributed authentication layer focusing on military-grade security and low latency.</p>
+<a class="text-on-surface hover:text-primary font-label-caps text-label-caps transition-colors" href="#">Case Study →</a>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="glass-card emerald-glow rounded-xl overflow-hidden group transition-all duration-300">
+<div class="h-48 overflow-hidden bg-surface-container">
+<img alt="Project Gamma" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A technical diagram style illustration of a cloud infrastructure setup. It uses abstract lines and glowing nodes to represent a scalable network of servers and databases. The design is minimalist and technical, with a focus on architectural precision. The lighting is low-key with sharp green accents highlighting the data flow paths." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC42M3JQIQ6AEHxHq56mLxUS2Dz8Y4ZjRsWj6GdlnzmaNT0-hVtF3Suz3txvZjUsPJLvev0FyZyra2gDvAQ2MvYI3yZISgorPoZYpXpQThJMF48I_wK_rHtJlxtO6bSrZ2r4ObFf5mB5jOL_GQutDzmA4_y5ERvKj6foFybYAzZ-nxXYHGaTBGdX_4m97G3DLJF0ka3wpf0njqhnL9r47Ei--3ZIOck0HiK6Qq2jcdlm9-pielH5f4ncZY1puugamBkKeia5dJrNRo"/>
+</div>
+<div class="p-component-padding-md">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-2 py-1 rounded bg-background-deep border border-surface-stroke text-primary font-label-code text-xs uppercase tracking-wider">AWS</span>
+<span class="px-2 py-1 rounded bg-background-deep border border-surface-stroke text-primary font-label-code text-xs uppercase tracking-wider">Terraform</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">CloudScale Infra</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Infrastructure as Code solution for auto-scaling multi-cloud deployments.</p>
+<a class="text-on-surface hover:text-primary font-label-caps text-label-caps transition-colors" href="#">Case Study →</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-dim dark:bg-surface-dim border-t border-surface-stroke mt-section-gap-desktop">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter py-component-padding-md max-w-container-max mx-auto gap-4">
+<div class="flex items-center gap-3">
+<span class="font-label-code text-label-code text-primary">Victor Reyes</span>
+<span class="text-on-surface-variant font-body-md text-body-md">| © 2024 Engineered with precision.</span>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="#">Twitter</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="#">Source</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Hidden on desktop as per rules) -->
+<nav class="fixed bottom-0 w-full z-50 md:hidden bg-background/90 backdrop-blur-md border-t border-surface-stroke h-16 flex justify-around items-center px-4">
+<button class="flex flex-col items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-caps text-[10px]">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="code">code</span>
+<span class="font-label-caps text-[10px]">Work</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-caps text-[10px]">About</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-label-caps text-[10px]">Contact</span>
+</button>
+</nav>
+<script>
+        // Subtle mouse tracking glow effect for the hero section
+        const hero = document.getElementById('home');
+        if (hero) {
+            hero.addEventListener('mousemove', (e) => {
+                const rect = hero.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                hero.style.setProperty('--mouse-x', `${x}px`);
+                hero.style.setProperty('--mouse-y', `${y}px`);
+            });
+        }
+        
+        // Active state handling for navigation links
+        const navLinks = document.querySelectorAll('header nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.forEach(l => {
+                    l.classList.remove('text-primary', 'border-b-2', 'border-primary', 'pb-1');
+                    l.classList.add('text-on-surface-variant');
+                });
+                link.classList.remove('text-on-surface-variant');
+                link.classList.add('text-primary', 'border-b-2', 'border-primary', 'pb-1');
+            });
+        });
+    </script>
+</body></html>
