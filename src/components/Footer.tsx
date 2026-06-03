@@ -56,7 +56,7 @@ const NeoDarkFooter = () => {
 };
 
 const LegacyFooter = () => {
-  const year = 2026;
+  const year = 2023;
   return (
     <Box as="footer">
       <Box sx={{ background: "black", position: ["static", "static", "static", "static", "fixed"], width: "100%", bottom: 0, display: "flex", justifyContent: "center", alignItems: "center", borderTop: "3px solid white" }}>
