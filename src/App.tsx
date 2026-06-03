@@ -112,13 +112,13 @@ function App() {
         { isNeoDark && activeTab === 'Portfolio' && <WorkProjects /> }
         { isNeoDark && activeTab === 'Contact' && <ContactNeo /> }
         { isNeoDark && activeTab === 'Resume' && <ResumeNeo /> }
-        { activeTab === 'Portfolio' && (
+        { !isNeoDark && activeTab === 'Portfolio' && (
           <PortfolioProjects />
         )}
-        { activeTab === 'Resume' && (
+        { !isNeoDark && activeTab === 'Resume' && (
           <PortfolioResume />
         )}
-        { activeTab === 'Contact' && (
+        { !isNeoDark && activeTab === 'Contact' && (
           <PortfolioContact />
         )}
       </MainLayout>

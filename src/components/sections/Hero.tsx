@@ -102,19 +102,25 @@ export function Hero() {
           }}
           className="hero-dashboard-image"
         >
+          <img
+            src="/DashboardExample.jpg"
+            alt="Dashboard Preview"
+            style={{
+              width: '100%', height: '100%', objectFit: 'cover',
+              filter: 'blur(3px) brightness(0.7)',
+              transform: 'scale(1.05)',
+            }}
+          />
           <div style={{
             position: 'absolute', inset: 0,
-            background: 'linear-gradient(to top, var(--color-base-100), transparent)',
+            background: 'linear-gradient(to top, var(--color-base-100) 0%, transparent 60%)',
             zIndex: 1, pointerEvents: 'none',
           }} />
           <div style={{
-            width: '100%', height: '100%', display: 'flex',
-            alignItems: 'center', justifyContent: 'center',
-            fontFamily: "'JetBrains Mono', monospace", fontSize: '1rem',
-            color: 'var(--color-primary)', opacity: 0.3,
-          }}>
-            {'// Dashboard preview — coming soon'}
-          </div>
+            position: 'absolute', inset: 0,
+            background: 'color-mix(in oklab, var(--color-primary) 8%, transparent)',
+            zIndex: 1, pointerEvents: 'none',
+          }} />
         </div>
       </div>
     </section>
