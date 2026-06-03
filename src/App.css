@@ -114,3 +114,35 @@
   50% { opacity: 0.5; }
   100% { opacity: 1; }
 }
+
+/* ── Admin Theme Indicator Badge ── */
+.admin-theme-indicator {
+  position: fixed; bottom: 1rem; left: 1.25rem;
+  z-index: 2147483646;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  border-radius: 9999px;
+  border: 1px solid color-mix(in oklab, var(--color-base-300) 60%, transparent);
+  background: color-mix(in oklab, var(--color-base-100) 75%, transparent);
+  backdrop-filter: blur(8px);
+  color: var(--color-base-content);
+  opacity: 0.6;
+  transition: opacity 150ms ease;
+  cursor: default;
+  user-select: none;
+}
+.admin-theme-indicator:hover { opacity: 1; }
+.admin-status-dot {
+  display: inline-block; width: 0.4rem; height: 0.4rem;
+  border-radius: 50%;
+  background: var(--color-primary);
+  animation: indicator-pulse 2s ease-in-out infinite;
+}
+@keyframes indicator-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
