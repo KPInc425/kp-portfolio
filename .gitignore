@@ -31,3 +31,10 @@ tests/artifacts/logs/
 # Node / build
 node_modules/
 dist/
+
+# Dev startup scripts
+_serve_tmp.bat
+fix-colors.mjs
+fix-overlay.mjs
+start-glowup*.bat
+start-worktree-dev.bat
