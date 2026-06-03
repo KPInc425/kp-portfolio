@@ -118,12 +118,7 @@ const AdminPanel = ({ adminUnlocked, isOpen, onToggleOpen, projectsApi }: AdminP
   }
 
   if (!adminUnlocked) {
-    return (
-      <div className="admin-theme-indicator">
-        <span className="admin-status-dot" />
-        {theme.toUpperCase()}
-      </div>
-    )
+    return null
   }
 
   return (
