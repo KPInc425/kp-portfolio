@@ -1,5 +1,116 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Moul&family=Overpass&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Moul&family=Overpass&display=swap');
+.caveat-font { font-family: 'Caveat', cursive; }
 
-.caveat-font {
-    font-family: "Caveat", cursive;
+:root {
+  --color-primary: #20421a; --color-base-content: #ffffff;
+  --color-base-100: rgba(0,0,0,0.8); --color-base-200: #1f1f1f;
+  --color-base-300: #111111; --color-surfaceGlass: rgba(0,0,0,0.65);
+  --color-surfaceOpaque: rgba(31,31,31,1);
+}
+[data-theme="neo-dark"] {
+  --color-primary: #00e676; --color-base-content: #e3e2e2;
+  --color-base-100: #121414; --color-base-200: #1e2020; --color-base-300: #2a2a2a;
+  --color-surfaceGlass: color-mix(in oklab, #1e2020 80%, transparent);
+  --color-surfaceOpaque: #1e2020;
+}
+
+/* ── Cinematic Transition Overlay ── */
+.transition-overlay {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 2147483647; pointer-events: none;
+  opacity: 0; background: #000;
+}
+.transition-overlay.active {
+  opacity: 1;
+  animation: glitch-shake 0.12s steps(4) infinite;
+}
+
+/* Green energy bloom - uses bright neodark green regardless of current theme */
+.transition-overlay::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(
+    circle at 50% 50%,
+    color-mix(in oklab, #00e676 25%, #000 75%) 0%,
+    color-mix(in oklab, #00e676 8%, #000 92%) 40%,
+    transparent 70%
+  );
+  opacity: 0;
+  animation: bloom-pulse 2s ease-in-out infinite alternate;
+}
+.transition-overlay.active::before { opacity: 1; }
+
+/* Bright scanlines - always visible */
+.transition-overlay::after {
+  content: ''; position: absolute; inset: 0;
+  background: repeating-linear-gradient(
+    180deg,
+    transparent 0px, transparent 2px,
+    color-mix(in oklab, #00e676 18%, transparent) 2px,
+    color-mix(in oklab, #00e676 18%, transparent) 4px
+  );
+  opacity: 0;
+  animation: scan-drift 0.25s linear infinite;
+}
+.transition-overlay.active::after { opacity: 1; }
+
+/* Glitch variant: aggressive color shift + noise */
+.transition-overlay[data-transition-type="glitch"] {
+  animation: glitch-shake 0.06s steps(3) infinite;
+}
+.transition-overlay[data-transition-type="glitch"]::before {
+  animation: glitch-bloom 0.5s steps(6) infinite;
+}
+.transition-overlay[data-transition-type="glitch"]::after {
+  background:
+    repeating-linear-gradient(90deg,
+      color-mix(in oklch, #00e676 22%, transparent) 0px,
+      transparent 4px,
+      color-mix(in oklch, #00e676 15%, transparent) 4px,
+      transparent 8px
+    ),
+    repeating-linear-gradient(180deg,
+      transparent 0px, transparent 1px,
+      color-mix(in oklch, #00e676 20%, transparent) 1px,
+      color-mix(in oklch, #00e676 10%, transparent) 3px
+    );
+  animation: scan-drift 0.1s linear infinite, noise-flicker 0.04s steps(3) infinite;
+}
+
+/* Theme swapped → clean fade-out */
+.transition-overlay.theme-swapped {
+  opacity: 0; background: transparent;
+  transition: opacity 900ms ease;
+  animation: none;
+}
+.transition-overlay.theme-swapped::before,
+.transition-overlay.theme-swapped::after {
+  opacity: 0; animation: none;
+  transition: opacity 500ms ease;
+}
+
+@keyframes bloom-pulse {
+  0% { opacity: 0.7; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.08); }
+}
+@keyframes scan-drift {
+  from { background-position: 0 0; }
+  to { background-position: 0 8px; }
+}
+@keyframes glitch-shake {
+  0% { transform: translate(0); }
+  25% { transform: translate(-3px, 1px); }
+  50% { transform: translate(4px, -2px); }
+  75% { transform: translate(-2px, 2px); }
+  100% { transform: translate(0); }
+}
+@keyframes glitch-bloom {
+  0% { opacity: 0.8; filter: hue-rotate(-20deg); }
+  33% { opacity: 1; filter: hue-rotate(0deg); }
+  66% { opacity: 0.7; filter: hue-rotate(20deg); }
+  100% { opacity: 1; filter: hue-rotate(0deg); }
+}
+@keyframes noise-flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
 }

@@ -8,12 +8,12 @@ export const mainTheme: Theme = {
         logoHeading: 'Times New Roman, serif',
     },
     colors: {
-        text: '#fff',
-        secondaryText: 'rgba(255,255,255,0.5)',
-        background: 'rgba(0,0,0,0.8)',
-        primary: '#20421A',
-        surfaceGlass: 'rgba(0,0,0,0.65)',
-        surfaceOpaque: 'rgba(31,31,31,1)',
+        text: 'var(--color-base-content)',
+        secondaryText: 'color-mix(in oklab, var(--color-base-content) 55%, transparent)',
+        background: 'var(--color-base-100)',
+        primary: 'var(--color-primary)',
+        surfaceGlass: 'var(--color-surfaceGlass)',
+        surfaceOpaque: 'var(--color-surfaceOpaque)',
         surfaceSecondary: 'rgb(255,255,255)',
         
     },

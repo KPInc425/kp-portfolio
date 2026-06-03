@@ -1,7 +1,3 @@
-// TopAppBar — the stitch's fixed nav bar for the neo-dark theme.
-// Uses react-router-dom's NavLink for active-state highlighting.
-// Conditionally rendered in App.tsx when theme === 'neo-dark'.
-
 import { NavLink } from 'react-router-dom'
 
 const navItems = [
@@ -20,21 +16,27 @@ export function TopAppBar() {
         fontFamily: "'Geist', 'Inter', sans-serif",
       }}
     >
-      <nav className="page-shell" style={{ display: 'flex', alignItems: 'center', gap: '1rem', paddingBlock: '0.75rem' }}>
+      <nav
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '1rem',
+          paddingBlock: '0.75rem',
+          width: 'min(1360px, calc(100% - 2rem))',
+          margin: '0 auto',
+        }}
+      >
         {/* Brand */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginRight: 'auto' }}>
-          <span
-            className="material-symbols-outlined"
-            style={{ color: 'var(--color-primary)', fontSize: '1.5rem' }}
-          >
-            terminal
+          <span style={{ color: 'var(--color-primary)', fontSize: '1.5rem', lineHeight: 1, fontFamily: "'JetBrains Mono', monospace" }}>
+            {'>_'}
           </span>
-          <span style={{ fontWeight: 700, fontSize: '1.25rem', color: 'var(--color-base-content)' }}>
+          <span style={{ fontWeight: 700, fontSize: '1.25rem', color: 'var(--color-base-content)', fontFamily: "'Geist', 'Inter', sans-serif" }}>
             Victor Reyes
           </span>
         </div>
 
-        {/* Desktop nav links (hidden on mobile) */}
+        {/* Desktop nav links */}
         <div
           style={{
             display: 'flex',
@@ -44,7 +46,7 @@ export function TopAppBar() {
             fontSize: '0.75rem',
             fontWeight: 600,
             letterSpacing: '0.1em',
-            textTransform: 'uppercase' as const,
+            textTransform: 'uppercase',
           }}
         >
           {navItems.map((item) => (
@@ -52,11 +54,6 @@ export function TopAppBar() {
               key={item.to}
               to={item.to}
               end={item.to === '/'}
-              className={({ isActive }) =>
-                isActive
-                  ? 'nav-link-active'
-                  : 'nav-link-inactive'
-              }
               style={({ isActive }) => ({
                 textDecoration: 'none',
                 color: isActive ? 'var(--color-primary)' : 'var(--color-base-content)',
@@ -70,11 +67,9 @@ export function TopAppBar() {
           ))}
         </div>
 
-        {/* Dev mode tag (desktop only) */}
+        {/* Dev mode tag */}
         <div
-          className="dev-mode-tag"
           style={{
-            display: 'none',
             fontFamily: "'JetBrains Mono', monospace",
             fontSize: '0.8rem',
             color: 'var(--color-primary)',
@@ -82,24 +77,8 @@ export function TopAppBar() {
             whiteSpace: 'nowrap',
           }}
         >
-          // dev_mode: true
+          {'// dev_mode: true'}
         </div>
-
-        {/* Mobile hamburger */}
-        <button
-          style={{
-            display: 'none', // shown on mobile via media query
-            background: 'none',
-            border: 'none',
-            color: 'var(--color-primary)',
-            fontSize: '1.5rem',
-            cursor: 'pointer',
-          }}
-        >
-          <span className="material-symbols-outlined" style={{ fontSize: '1.5rem' }}>
-            menu
-          </span>
-        </button>
       </nav>
     </header>
   )
