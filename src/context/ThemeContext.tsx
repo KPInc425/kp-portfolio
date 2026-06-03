@@ -77,7 +77,7 @@ export function ThemeTransitionProvider({ children }: { children: React.ReactNod
   )
 
   useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme)
+    if (theme !== 'legacy') document.documentElement.setAttribute('data-theme', theme); else document.documentElement.removeAttribute('data-theme')
   }, [theme])
 
   useEffect(() => {
@@ -138,6 +138,7 @@ export function ThemeTransitionProvider({ children }: { children: React.ReactNod
   const triggerTransition = useCallback((reason: string) => {
     if (isTransitioning) return
     setIsTransitioning(true)
+    setHasTransitioned(false)
     pushDebugLog(`Transition triggered: ${reason}.`)
     const targetId = transitionConfig.targetThemeId
       ?? registeredThemes[(registeredThemes.findIndex((t) => t.id === theme) + 1) % registeredThemes.length]?.id
@@ -146,11 +147,16 @@ export function ThemeTransitionProvider({ children }: { children: React.ReactNod
       setIsTransitioning(false)
       return
     }
+    // Overlay fades in (600ms css). At 2s: swap theme under black cover.
     window.setTimeout(() => {
       setThemeState(targetId as PortfolioTheme)
-      setHasTransitioned(true)
       pushDebugLog(`Theme swapped to ${targetId}.`)
-    }, 180)
+    }, 2000)
+    // hasTransitioned triggers overlay fade-out css (800ms css).
+    window.setTimeout(() => {
+      setHasTransitioned(true)
+      pushDebugLog('Theme revealed (overlay fading out).')
+    }, 2100)
     window.setTimeout(() => {
       setIsTransitioning(false)
       pushDebugLog('Transition complete.')
