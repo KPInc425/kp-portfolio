@@ -9,6 +9,10 @@ import PortfolioProjects from './components/PortfolioProjects'
 import PortfolioResume from './components/PortfolioResume'
 import PortfolioContact from './components/PortfolioContact'
 import { Hero } from './components/sections/Hero'
+import { About } from './components/sections/About'
+import { WorkProjects } from './components/sections/WorkProjects'
+import { ContactNeo } from './components/sections/ContactNeo'
+import { ResumeNeo } from './components/sections/ResumeNeo'
 import { BentoIntro } from './components/sections/BentoIntro'
 import { FeaturedProjects } from './components/sections/FeaturedProjects'
 import { useLocation, useNavigate } from 'react-router-dom'
@@ -105,6 +109,10 @@ function App() {
 
         { isNeoDark && activeTab === 'Home' && <BentoIntro /> }
         { isNeoDark && activeTab === 'Home' && <FeaturedProjects /> }
+        { isNeoDark && activeTab === 'Details' && <About /> }
+        { isNeoDark && activeTab === 'Portfolio' && <WorkProjects /> }
+        { isNeoDark && activeTab === 'Contact' && <ContactNeo /> }
+        { isNeoDark && activeTab === 'Resume' && <ResumeNeo /> }
         { activeTab === 'Portfolio' && (
           <PortfolioProjects />
         )}

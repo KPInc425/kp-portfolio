@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | Victor Reyes - Full-Stack Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Inter:wght@400;600&amp;family=Geist:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(30, 30, 30, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid #2A2A2A;
+        }
+        .glass-card:hover {
+            border-color: #00E676;
+            box-shadow: 0 0 20px rgba(0, 230, 118, 0.1);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A0A0A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2A2A2A;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00E676;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#bacbb9",
+                        "inverse-primary": "#006d35",
+                        "secondary-container": "#4a4949",
+                        "secondary-fixed": "#e5e2e1",
+                        "surface": "#121414",
+                        "tertiary-fixed": "#ffdcbf",
+                        "surface-tint": "#00e475",
+                        "primary": "#75ff9e",
+                        "tertiary-container": "#ffba79",
+                        "on-primary": "#003918",
+                        "primary-fixed": "#62ff96",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-secondary-container": "#bab8b7",
+                        "surface-variant": "#343535",
+                        "surface-container-lowest": "#0d0e0f",
+                        "success-emerald": "#4CAF50",
+                        "on-secondary-fixed-variant": "#474646",
+                        "surface-container-low": "#1a1c1c",
+                        "background": "#121414",
+                        "inverse-surface": "#e3e2e2",
+                        "surface-dim": "#121414",
+                        "secondary": "#c8c6c5",
+                        "error": "#ffb4ab",
+                        "surface-stroke": "#2A2A2A",
+                        "on-primary-fixed": "#00210b",
+                        "outline": "#859585",
+                        "on-secondary": "#313030",
+                        "on-tertiary-container": "#794810",
+                        "surface-container": "#1e2020",
+                        "code-highlight": "#16211A",
+                        "surface-container-high": "#292a2a",
+                        "error-container": "#93000a",
+                        "background-deep": "#0A0A0A",
+                        "inverse-on-surface": "#2f3131",
+                        "outline-variant": "#3b4a3d",
+                        "surface-bright": "#383939",
+                        "primary-container": "#00e676",
+                        "on-tertiary-fixed-variant": "#6a3c03",
+                        "tertiary": "#ffdec4",
+                        "primary-fixed-dim": "#00e475",
+                        "on-background": "#e3e2e2",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#005226",
+                        "on-error": "#690005",
+                        "surface-container-highest": "#343535",
+                        "on-surface": "#e3e2e2",
+                        "on-tertiary": "#4b2800",
+                        "on-tertiary-fixed": "#2d1600",
+                        "on-primary-container": "#00612e",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "surface-elevated": "#1E1E1E",
+                        "tertiary-fixed-dim": "#fdb878"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap-mobile": "80px",
+                        "component-padding-sm": "12px",
+                        "section-gap-desktop": "160px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "component-padding-md": "24px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "label-code": ["JetBrains Mono"],
+                        "headline-lg": ["Geist"],
+                        "label-caps": ["Inter"],
+                        "display-xl": ["Geist"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Geist"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Geist"]
+                    },
+                    "fontSize": {
+                        "label-code": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full bg-background/80 dark:bg-background/80 backdrop-blur-md border-b border-surface-stroke dark:border-surface-stroke z-50">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface">Victor Reyes</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Work</a>
+<a class="font-label-caps text-label-caps text-primary dark:text-primary border-b-2 border-primary pb-1" href="#">About</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-24">
+<!-- Hero / About Me Section -->
+<section class="max-w-container-max mx-auto px-gutter mb-section-gap-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 space-y-6">
+<span class="font-label-code text-label-code text-primary uppercase tracking-widest">// ABOUT_ME.JS</span>
+<h1 class="font-display-xl text-display-xl text-on-surface leading-none">Crafting digital solutions with <span class="text-primary">precision.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        I am a Full-Stack Developer dedicated to building high-performance applications that merge technical excellence with seamless user experiences. With a focus on scalability and clean architecture, I transform complex problems into elegant, maintainable code.
+                    </p>
+<div class="flex items-center gap-4 pt-4">
+<div class="h-px w-12 bg-surface-stroke"></div>
+<p class="font-label-code text-label-code text-on-surface-variant">Powered by Passion and Enthusiasm</p>
+</div>
+</div>
+<div class="md:col-span-5 relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-transparent opacity-20 group-hover:opacity-40 transition-opacity duration-500 rounded-lg"></div>
+<img alt="Victor Reyes Professional Portrait" class="relative rounded-lg grayscale hover:grayscale-0 transition-all duration-700 border border-surface-stroke" data-alt="A professional close-up portrait of a male full-stack developer in a high-tech studio environment. The lighting is moody and low-key, with a subtle neon green backlight reflecting off his profile to match the minimalist-tech brand aesthetic. He wears a dark, modern shirt and looks directly into the camera with a confident, focused expression. The overall style is sharp, sophisticated, and polished." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7joW598JRuSy2yZ7ktwERxvIF-NmIpm6S-ZNRhC7nQvBe8Vch_tcyOjJ3COvEduqzKSuSv3-XHUHIHlR-F6rlwelBgYmYL8hZ6l5_-JjAAfsJjUKjDqAPlzArIWAbd5vwLUIJEQ-E_Bzur8Oaq07aATt8eDIqqZo0AMlcpTKVD8lGEpfdHpXl3PcogHxSJtJtP4OqoWdeaC4oXbBwNZ34ZlIxF94NROnUzBzW9MTy2EBjN15SPz8zg1SDnYDoQK-AaECI-XCPAGE"/>
+</div>
+</div>
+</section>
+<!-- Core Technology Bento Grid -->
+<section class="bg-background-deep py-24 border-y border-surface-stroke">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+<div>
+<span class="font-label-code text-label-code text-primary">// TECH_STACK</span>
+<h2 class="font-headline-lg text-headline-lg mt-2">Core Technology</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs md:text-right">
+                        Specialized in modern web ecosystems and high-performance cloud infrastructure.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Frontend -->
+<div class="glass-card p-component-padding-md rounded-lg md:col-span-2">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">terminal</span>
+<h3 class="font-headline-md text-headline-md mb-2">React Ecosystem</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Building reactive, component-based interfaces with focus on performance and DX.</p>
+<div class="flex flex-wrap gap-2">
+<span class="font-label-code text-label-code px-3 py-1 bg-surface-container rounded-full text-primary border border-surface-stroke">TypeScript</span>
+<span class="font-label-code text-label-code px-3 py-1 bg-surface-container rounded-full text-primary border border-surface-stroke">Next.js</span>
+<span class="font-label-code text-label-code px-3 py-1 bg-surface-container rounded-full text-primary border border-surface-stroke">Tailwind CSS</span>
+</div>
+</div>
+<!-- Backend -->
+<div class="glass-card p-component-padding-md rounded-lg">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">settings_input_component</span>
+<h4 class="font-headline-md text-headline-md mb-2">Node.js</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Robust server-side logic and API orchestration.</p>
+<div class="font-label-code text-label-code text-primary opacity-60">Runtime: V8</div>
+</div>
+<!-- Database -->
+<div class="glass-card p-component-padding-md rounded-lg">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">database</span>
+<h4 class="font-headline-md text-headline-md mb-2">PostgreSQL</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Relational modeling and complex query optimization.</p>
+<div class="font-label-code text-label-code text-primary opacity-60">ACID Compliant</div>
+</div>
+<!-- Infrastructure -->
+<div class="glass-card p-component-padding-md rounded-lg md:col-span-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4">cloud</span>
+<h3 class="font-headline-md text-headline-md mb-2">AWS Infra</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Cloud-native deployment, serverless architectures, and CI/CD pipelines. Leveraging Lambda, S3, and EC2 for scalable global applications.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-surface-container-high rounded border border-surface-stroke">
+<p class="font-label-caps text-label-caps text-on-surface-variant">Scalability</p>
+<p class="font-headline-md text-headline-md text-on-surface">99.9%</p>
+</div>
+<div class="p-4 bg-surface-container-high rounded border border-surface-stroke">
+<p class="font-label-caps text-label-caps text-on-surface-variant">Architecture</p>
+<p class="font-headline-md text-headline-md text-on-surface">Cloud</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy Section -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-5">
+<span class="font-label-code text-label-code text-primary">// PHILOSOPHY</span>
+<h2 class="font-headline-lg text-headline-lg mt-2 mb-8">Engineering with Intent</h2>
+<div class="space-y-8">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">psychology</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface text-xl mb-1">Logic First</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Every line of code should serve a purpose. I prioritize clear logic over clever abstractions to ensure long-term maintainability.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">speed</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface text-xl mb-1">Performance Driven</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">In a world of short attention spans, speed is a feature. I optimize for the critical rendering path and database efficiency.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">diversity_3</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface text-xl mb-1">Human-Centric</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">I build for people. Accessibility and intuitive UX are never afterthoughts; they are core requirements of professional engineering.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 flex items-center justify-center p-8 bg-surface-container rounded-lg border border-surface-stroke relative overflow-hidden group">
+<!-- Background Decoration -->
+<div class="absolute inset-0 opacity-10 pointer-events-none font-label-code text-label-code leading-relaxed p-4 select-none">
+                        const developer = { <br/>
+                          name: "Victor Reyes", <br/>
+                          values: ["Quality", "Integrity", "Innovation"], <br/>
+                          mission: "Translate complexity into simplicity", <br/>
+                          passion: true <br/>
+                        }; <br/>
+                        function buildImpactfulSoftware() { <br/>
+                          return innovation + empathy + engineering; <br/>
+                        }
+                    </div>
+<div class="relative z-10 text-center space-y-4">
+<div class="text-primary text-6xl font-bold font-display-xl">100+</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant tracking-widest uppercase">Projects Shipped Globally</p>
+<p class="font-body-lg text-body-lg text-on-surface max-w-sm italic">
+                            "The best code is the code that stays invisible to the user while empowering their every action."
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-component-padding-md bg-background-deep dark:bg-background-deep border-t border-surface-stroke dark:border-surface-stroke">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto gap-4">
+<div class="font-label-caps text-label-caps text-on-surface">Victor Reyes</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Victor Reyes. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for tech stack cards
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+
+        // Simple active state observer
+        const observerOptions = {
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>

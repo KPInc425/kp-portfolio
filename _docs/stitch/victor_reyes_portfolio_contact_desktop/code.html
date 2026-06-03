@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | Victor Reyes - Full-Stack Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&amp;family=Inter:wght@400;600&amp;family=Geist:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#bacbb9",
+                        "inverse-primary": "#006d35",
+                        "secondary-container": "#4a4949",
+                        "secondary-fixed": "#e5e2e1",
+                        "surface": "#121414",
+                        "tertiary-fixed": "#ffdcbf",
+                        "surface-tint": "#00e475",
+                        "primary": "#75ff9e",
+                        "tertiary-container": "#ffba79",
+                        "on-primary": "#003918",
+                        "primary-fixed": "#62ff96",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-secondary-container": "#bab8b7",
+                        "surface-variant": "#343535",
+                        "surface-container-lowest": "#0d0e0f",
+                        "success-emerald": "#4CAF50",
+                        "on-secondary-fixed-variant": "#474646",
+                        "surface-container-low": "#1a1c1c",
+                        "background": "#121414",
+                        "inverse-surface": "#e3e2e2",
+                        "surface-dim": "#121414",
+                        "secondary": "#c8c6c5",
+                        "error": "#ffb4ab",
+                        "surface-stroke": "#2A2A2A",
+                        "on-primary-fixed": "#00210b",
+                        "outline": "#859585",
+                        "on-secondary": "#313030",
+                        "on-tertiary-container": "#794810",
+                        "surface-container": "#1e2020",
+                        "code-highlight": "#16211A",
+                        "surface-container-high": "#292a2a",
+                        "error-container": "#93000a",
+                        "background-deep": "#0A0A0A",
+                        "inverse-on-surface": "#2f3131",
+                        "outline-variant": "#3b4a3d",
+                        "surface-bright": "#383939",
+                        "primary-container": "#00e676",
+                        "on-tertiary-fixed-variant": "#6a3c03",
+                        "tertiary": "#ffdec4",
+                        "primary-fixed-dim": "#00e475",
+                        "on-background": "#e3e2e2",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#005226",
+                        "on-error": "#690005",
+                        "surface-container-highest": "#343535",
+                        "on-surface": "#e3e2e2",
+                        "on-tertiary": "#4b2800",
+                        "on-tertiary-fixed": "#2d1600",
+                        "on-primary-container": "#00612e",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "surface-elevated": "#1E1E1E",
+                        "tertiary-fixed-dim": "#fdb878"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap-mobile": "80px",
+                        "component-padding-sm": "12px",
+                        "section-gap-desktop": "160px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "component-padding-md": "24px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "label-code": ["JetBrains Mono"],
+                        "headline-lg": ["Geist"],
+                        "label-caps": ["Inter"],
+                        "display-xl": ["Geist"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Geist"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Geist"]
+                    },
+                    "fontSize": {
+                        "label-code": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A0A0A;
+            color: #e3e2e2;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(30, 30, 30, 0.6);
+            backdrop-filter: blur(8px);
+        }
+        .primary-glow:hover {
+            box-shadow: 0 0 20px rgba(0, 230, 118, 0.15);
+        }
+        @keyframes pulse-soft {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+        .animate-pulse-soft {
+            animation: pulse-soft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md bg-background-deep selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full bg-background/80 dark:bg-background/80 backdrop-blur-md border-b border-surface-stroke z-50">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-on-surface" href="#">Victor Reyes</a>
+<div class="hidden md:flex gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Work</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="#">Contact</a>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32 pb-section-gap-desktop">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter mb-20">
+<div class="flex flex-col items-start gap-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-code-highlight border border-primary/20">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse-soft"></span>
+<span class="font-label-code text-label-code text-primary">Available for new opportunities</span>
+</div>
+<h1 class="font-display-xl text-display-xl md:text-display-xl text-[48px] leading-tight md:leading-none text-on-surface">
+                    Get In <span class="text-primary-container">Touch</span>
+</h1>
+<p class="max-w-2xl text-on-surface-variant font-body-lg text-body-lg">
+                    Have a complex problem that needs a technical solution? Whether it's a new project, a technical audit, or just a chat about the future of web tech, my inbox is always open.
+                </p>
+</div>
+</section>
+<!-- Main Content: Form & Connect -->
+<section class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Contact Form Card -->
+<div class="md:col-span-7 bg-surface-elevated border border-surface-stroke p-component-padding-md rounded-lg shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+<span class="font-label-code text-[80px] leading-none">01</span>
+</div>
+<form class="flex flex-col gap-6 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="name">Full Name</label>
+<input class="bg-surface-container border border-surface-stroke rounded-lg px-4 py-3 text-on-surface placeholder:text-outline-variant focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" id="name" name="name" placeholder="John Doe" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="email">Email Address</label>
+<input class="bg-surface-container border border-surface-stroke rounded-lg px-4 py-3 text-on-surface placeholder:text-outline-variant focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" id="email" name="email" placeholder="john@example.com" required="" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="message">Message</label>
+<textarea class="bg-surface-container border border-surface-stroke rounded-lg px-4 py-3 text-on-surface placeholder:text-outline-variant focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all resize-none" id="message" name="message" placeholder="Tell me about your project..." required="" rows="6"></textarea>
+</div>
+<button class="bg-primary-container text-on-primary-container font-label-caps text-label-caps py-4 rounded-lg hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2 group" type="submit">
+                        Send Message
+                        <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">send</span>
+</button>
+<p class="font-label-code text-label-code text-on-tertiary-fixed-variant opacity-60">
+                        // Security check: Encrypted transmission enabled
+                    </p>
+</form>
+</div>
+<!-- Connect & Info Sidebar -->
+<div class="md:col-span-5 flex flex-col gap-8">
+<!-- Connect Section -->
+<div class="flex flex-col gap-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Connect</h2>
+<div class="grid grid-cols-1 gap-3">
+<a class="flex items-center justify-between p-4 bg-surface-container border border-surface-stroke rounded-lg hover:border-primary transition-all group" href="#">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">terminal</span>
+<span class="font-body-md text-body-md text-on-surface">GitHub</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between p-4 bg-surface-container border border-surface-stroke rounded-lg hover:border-primary transition-all group" href="#">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">work</span>
+<span class="font-body-md text-body-md text-on-surface">LinkedIn</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between p-4 bg-surface-container border border-surface-stroke rounded-lg hover:border-primary transition-all group" href="#">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">share</span>
+<span class="font-body-md text-body-md text-on-surface">Twitter</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Office Hours / Context Card -->
+<div class="p-6 rounded-lg bg-code-highlight border border-surface-stroke flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">info</span>
+<h3 class="font-label-caps text-label-caps text-on-surface">Inquiry Response</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        I typically respond to technical inquiries within 24-48 business hours. For urgent architectural consultations, please prefix your subject line with <code class="bg-surface-container-highest px-1 text-primary">[URGENT]</code>.
+                    </p>
+<div class="pt-4 border-t border-surface-stroke/30">
+<p class="font-label-code text-label-code text-on-surface-variant italic">
+                            // Current Status: Coding from Madrid, ES
+                        </p>
+</div>
+</div>
+<!-- Atmospheric Map Placeholder -->
+<div class="h-48 rounded-lg bg-surface border border-surface-stroke overflow-hidden relative grayscale contrast-125 brightness-75">
+<div class="absolute inset-0 z-10 bg-gradient-to-t from-background-deep to-transparent"></div>
+<img class="w-full h-full object-cover" data-alt="A high-contrast, minimalist dark mode map visualization of a city grid. The aesthetic is monochromatic with deep blacks and sharp white street lines, reflecting a sophisticated tech-oriented design language. Subtle glowing green dots represent key nodes or locations, maintaining the brand's neon emerald accent. The overall mood is precise, urban, and modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNDkna-RmIQMzryRxTYO2HmVZDqsJ1kUW3jdPsyQybZUAOko1iXfpDzj89-3QVri2m3ny7k2ucrcelFESq4lTeP2vuKIadYg0NFw2ncp10cDeiCy7ehLJj8tQVZ08UrQXGAue70NYk0Qha1BfVJftRpFDoVTvqcCQsdy2j4fuBPXHXEJyoAr1lRKCoqSQiZjDNn_0gv4jGt0DxgBzNFMQBQoZXobB0gUN9EAaYD6-W0plAoSIjWJElx61s8K66Njg--lT35tz50xI"/>
+<div class="absolute bottom-4 left-4 z-20 flex flex-col">
+<span class="font-label-caps text-label-caps text-primary">HQ Location</span>
+<span class="font-headline-md text-headline-md text-on-surface">Madrid, Spain</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-deep border-t border-surface-stroke py-component-padding-md">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto gap-4">
+<span class="font-label-caps text-label-caps text-on-surface">Victor Reyes</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Victor Reyes. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple form interaction simulation
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span class="material-symbols-outlined animate-spin">sync</span> Sending...';
+            btn.classList.add('opacity-70', 'pointer-events-none');
+            
+            setTimeout(() => {
+                btn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> Message Sent!';
+                btn.classList.replace('bg-primary-container', 'bg-success-emerald');
+                e.target.reset();
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.replace('bg-success-emerald', 'bg-primary-container');
+                    btn.classList.remove('opacity-70', 'pointer-events-none');
+                }, 3000);
+            }, 1500);
+        });
+
+        // Hover effect for labels
+        const inputs = document.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.previousElementSibling.classList.replace('text-on-surface-variant', 'text-primary');
+            });
+            input.addEventListener('blur', () => {
+                input.previousElementSibling.classList.replace('text-primary', 'text-on-surface-variant');
+            });
+        });
+    </script>
+</body></html>

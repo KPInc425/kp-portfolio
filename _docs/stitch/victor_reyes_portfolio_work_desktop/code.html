@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Work | Victor Reyes Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Inter:wght@400;600;700&amp;family=Geist:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0A0A0A;
+            color: #e3e2e2;
+            overflow-x: hidden;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .project-card-hover:hover .hover-glow {
+            opacity: 1;
+        }
+        .project-card-hover:hover {
+            border-color: #00e676;
+            transform: translateY(-4px);
+        }
+        .glass-effect {
+            backdrop-filter: blur(12px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface-variant": "#bacbb9",
+                      "inverse-primary": "#006d35",
+                      "secondary-container": "#4a4949",
+                      "secondary-fixed": "#e5e2e1",
+                      "surface": "#121414",
+                      "tertiary-fixed": "#ffdcbf",
+                      "surface-tint": "#00e475",
+                      "primary": "#75ff9e",
+                      "tertiary-container": "#ffba79",
+                      "on-primary": "#003918",
+                      "primary-fixed": "#62ff96",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "on-secondary-container": "#bab8b7",
+                      "surface-variant": "#343535",
+                      "surface-container-lowest": "#0d0e0f",
+                      "success-emerald": "#4CAF50",
+                      "on-secondary-fixed-variant": "#474646",
+                      "surface-container-low": "#1a1c1c",
+                      "background": "#121414",
+                      "inverse-surface": "#e3e2e2",
+                      "surface-dim": "#121414",
+                      "secondary": "#c8c6c5",
+                      "error": "#ffb4ab",
+                      "surface-stroke": "#2A2A2A",
+                      "on-primary-fixed": "#00210b",
+                      "outline": "#859585",
+                      "on-secondary": "#313030",
+                      "on-tertiary-container": "#794810",
+                      "surface-container": "#1e2020",
+                      "code-highlight": "#16211A",
+                      "surface-container-high": "#292a2a",
+                      "error-container": "#93000a",
+                      "background-deep": "#0A0A0A",
+                      "inverse-on-surface": "#2f3131",
+                      "outline-variant": "#3b4a3d",
+                      "surface-bright": "#383939",
+                      "primary-container": "#00e676",
+                      "on-tertiary-fixed-variant": "#6a3c03",
+                      "tertiary": "#ffdec4",
+                      "primary-fixed-dim": "#00e475",
+                      "on-background": "#e3e2e2",
+                      "on-error-container": "#ffdad6",
+                      "on-primary-fixed-variant": "#005226",
+                      "on-error": "#690005",
+                      "surface-container-highest": "#343535",
+                      "on-surface": "#e3e2e2",
+                      "on-tertiary": "#4b2800",
+                      "on-tertiary-fixed": "#2d1600",
+                      "on-primary-container": "#00612e",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "surface-elevated": "#1E1E1E",
+                      "tertiary-fixed-dim": "#fdb878"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "section-gap-mobile": "80px",
+                      "component-padding-sm": "12px",
+                      "section-gap-desktop": "160px",
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "component-padding-md": "24px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "label-code": ["JetBrains Mono"],
+                      "headline-lg": ["Geist"],
+                      "label-caps": ["Inter"],
+                      "display-xl": ["Geist"],
+                      "body-lg": ["Inter"],
+                      "headline-lg-mobile": ["Geist"],
+                      "body-md": ["Inter"],
+                      "headline-md": ["Geist"]
+              },
+              "fontSize": {
+                      "label-code": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                      "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background-deep font-body-md text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full bg-background/80 dark:bg-background/80 backdrop-blur-md border-b border-surface-stroke z-50">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-on-surface">Victor Reyes</div>
+<nav class="hidden md:flex gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="#">Work</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</nav>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-32 pb-section-gap-desktop px-gutter max-w-container-max mx-auto">
+<!-- Hero Section -->
+<section class="mb-24 relative overflow-hidden">
+<div class="max-w-3xl">
+<p class="font-label-code text-label-code text-primary mb-4 flex items-center gap-2">
+<span class="w-8 h-[1px] bg-primary"></span>
+                    Selected Projects
+                </p>
+<h1 class="font-display-xl text-display-xl mb-6 leading-tight">My Work</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    A collection of high-performance engineering solutions tackling complex data visualization, distributed security, and scalable infrastructure challenges.
+                </p>
+</div>
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+</section>
+<!-- Projects Bento Grid -->
+<div class="bento-grid">
+<!-- Featured Project: Nexus Analytics -->
+<div class="col-span-12 md:col-span-8 bg-surface-elevated border border-surface-stroke p-8 flex flex-col justify-between relative project-card-hover transition-all duration-300 overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="font-label-code text-[10px] text-on-surface-variant/40 tracking-widest uppercase">ID: NEX-2024</span>
+</div>
+<div class="hover-glow absolute inset-0 bg-primary/5 opacity-0 transition-opacity duration-300 pointer-events-none"></div>
+<div class="z-10">
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-variant px-3 py-1 font-label-code text-label-code text-primary">Next.js</span>
+<span class="bg-surface-variant px-3 py-1 font-label-code text-label-code text-primary">Go</span>
+<span class="bg-surface-variant px-3 py-1 font-label-code text-label-code text-primary">PostgreSQL</span>
+<span class="bg-surface-variant px-3 py-1 font-label-code text-label-code text-primary">D3.js</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg mb-4">Nexus Analytics</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mb-8">
+                        A real-time data streaming and visualization engine capable of processing millions of events per second with sub-millisecond latency for fintech enterprise dashboards.
+                    </p>
+<a class="inline-flex items-center gap-2 text-primary font-label-caps text-label-caps group" href="#">
+                        EXPLORE CASE STUDY 
+                        <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="mt-12 rounded-lg overflow-hidden border border-surface-stroke/50 bg-background-deep h-64 relative group">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 opacity-60 hover:opacity-100" data-alt="A sophisticated data analytics dashboard with glowing neon green line graphs and complex heat maps against a dark minimalist background. The interface shows financial metrics and real-time data streams with high-precision UI elements. The lighting is low-key, emphasizing the luminescent data points in a high-tech command center aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3KCw_8FGZX2cPB_22Ji-plRFELsylWTniZoxwUUSlBXzYIRHjCnjwAUOYqUx0P59o7EekadCrB-7ake15ljVWMqUVHT0vZrvjMbvYflLix1Wf-eVxtw-fpXLw8_9ToIW28KHCLUsOxEc5aFjK2TVq5ueAzbchlbVZ32GCsQm9tOu-ADaPfkg6rz4woFEBrXBoepinIVBab_mz4nognJlQk118tpd1LHTRApOBgiq4-sNqL2WPoqEFbiZtgPfMN-sQDrr-S-YxMOs"/>
+</div>
+</div>
+<!-- Side Project: Tech Stack Summary -->
+<div class="col-span-12 md:col-span-4 bg-surface-elevated border border-surface-stroke p-8 flex flex-col justify-center relative overflow-hidden">
+<div class="font-label-code text-on-surface-variant/20 absolute -bottom-4 -right-4 text-6xl select-none font-bold">STACK</div>
+<h3 class="font-headline-md text-headline-md mb-6">Core Competencies</h3>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-body-md">Frontend: React, Next.js, TypeScript</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-body-md">Backend: Go, Node.js, Python</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-body-md">Cloud: AWS, Docker, Kubernetes</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-body-md">Database: PostgreSQL, Redis, Prisma</span>
+</li>
+</ul>
+</div>
+<!-- Project: SecureKey Auth -->
+<div class="col-span-12 md:col-span-6 bg-surface-elevated border border-surface-stroke p-8 project-card-hover transition-all duration-300 flex flex-col">
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-variant px-3 py-1 font-label-code text-label-code text-primary">Rust</span>
+<span class="bg-surface-variant px-3 py-1 font-label-code text-label-code text-primary">Auth0</span>
+<span class="bg-surface-variant px-3 py-1 font-label-code text-label-code text-primary">WASM</span>
+</div>
+<h2 class="font-headline-md text-headline-md mb-4">SecureKey Auth</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                    A zero-trust authentication protocol built with Rust and WebAssembly, providing cryptographic identity verification for decentralized applications.
+                </p>
+<div class="mb-6 rounded overflow-hidden h-48">
+<img class="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Close-up of a high-performance server rack with glowing green LED indicators in a dimly lit data center. The perspective is sharp and technical, emphasizing precision engineering and cybersecurity infrastructure. Dark metallic textures are highlighted by subtle emerald accents, creating a mood of absolute digital security." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxsdOJQpFh6zQ95fXPARfT-EXC1DkPbtvGwwfg2iUOIi13HrhQkxSEIxK8gEAAPE3GcldVZ0-DdrWdnRBIArLmBPe1puY020e-L-TKDZa1vtDo7vezDrkr0wg4XGm5x9P61piEEnhqgxJB8Wn1E-c9oiVeJ0pAIQ2rkjYuI4s546F36fTb2z-_qo5MKF-pj7_1OHU1DxehxyN-PB3QsnWR8ICKKX5EE5C_xLPGhyd-TyVKH_M3MJPvmGEZEBb3bsKNM54eQhI3WGA"/>
+</div>
+<a class="inline-flex items-center gap-2 text-primary font-label-caps text-label-caps" href="#">VIEW PROJECT <span class="material-symbols-outlined text-[18px]">open_in_new</span></a>
+</div>
+<!-- Project: CloudScale Infra -->
+<div class="col-span-12 md:col-span-6 bg-surface-elevated border border-surface-stroke p-8 project-card-hover transition-all duration-300 flex flex-col">
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-variant px-3 py-1 font-label-code text-label-code text-primary">Terraform</span>
+<span class="bg-surface-variant px-3 py-1 font-label-code text-label-code text-primary">AWS</span>
+<span class="bg-surface-variant px-3 py-1 font-label-code text-label-code text-primary">Kubernetes</span>
+</div>
+<h2 class="font-headline-md text-headline-md mb-4">CloudScale Infra</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                    Automated IaC framework for deploying multi-region Kubernetes clusters with auto-scaling policies and integrated CI/CD pipelines.
+                </p>
+<div class="mb-6 rounded overflow-hidden h-48">
+<img class="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Abstract visualization of cloud computing nodes connecting across a global network. Glowing emerald lines weave through a dark void representing data flow and server architecture. The style is minimalist and futuristic, reflecting enterprise-scale infrastructure and high-velocity engineering solutions with a deep black and bright neon green color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYNW43Qj0BVjGrDoyGgkA8uH-Gv6etHaOhKcUFvRNSS1fJTkBoB-vT0CGS0iYWuX0McYhAh_yULhumEzzPaLWVucIWPrq2YWcAljwJuPiysToh8ykWXKoRowogwItlgncfEWD3no77KoQJpOPzX13ZDeDLO7QIK9vnpRPXQpq2DPwU4PR3wvSnBpH0wyTOrbAjJLPGf6x1oqVblmFqScI-dfictVUn4aDK7RoV2M2F_uVoT1rRqx39MK35t9pJcILAfUc-PANMR5c"/>
+</div>
+<a class="inline-flex items-center gap-2 text-primary font-label-caps text-label-caps" href="#">VIEW REPO <span class="material-symbols-outlined text-[18px]">code</span></a>
+</div>
+</div>
+<!-- Call to Action -->
+<section class="mt-section-gap-desktop text-center bg-surface-elevated border border-surface-stroke py-16 px-gutter rounded-xl">
+<h2 class="font-headline-lg text-headline-lg mb-4">Have a project in mind?</h2>
+<p class="font-body-lg text-on-surface-variant mb-10 max-w-xl mx-auto">
+                I'm always open to discussing technical architecture, cloud migrations, or full-stack engineering collaborations.
+            </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 font-label-caps text-label-caps font-bold transition-transform active:scale-95">
+                    START A CONVERSATION
+                </button>
+<button class="border border-surface-stroke text-on-surface px-8 py-4 font-label-caps text-label-caps hover:border-primary transition-colors active:scale-95">
+                    DOWNLOAD CV
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-deep border-t border-surface-stroke w-full py-component-padding-md">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto gap-4">
+<div class="font-label-caps text-label-caps text-on-surface">Victor Reyes // Dev</div>
+<div class="font-body-md text-body-md text-on-surface-variant">© 2024 Victor Reyes. All rights reserved.</div>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions
+        document.querySelectorAll('.project-card-hover').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body></html>
