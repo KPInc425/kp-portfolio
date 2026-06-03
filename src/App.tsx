@@ -98,9 +98,8 @@ function App() {
     <div className="app-shell">
       <MainLayout>
         {/* Neo-dark shows Hero on Home, legacy shows VRLogoCard + PortfolioInfo always */}
-        {isNeoDark && activeTab === 'Home' ? (
-          <Hero />
-        ) : (
+        {isNeoDark && activeTab === 'Home' && <Hero />}
+        {!isNeoDark && (
           <Flex m={['0','5']} sx={{justifyContent: 'center', alignItems: 'center', gap: '5', flexDirection: ['column', 'column', 'column', 'column', 'row']}}>
             <VRLogoCard />
             <PortfolioInfo activeTab={activeTab} setActiveTab={setActiveTab} />
